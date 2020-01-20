@@ -1,0 +1,49 @@
+.main-slider-wrapper
+	margin: 20px
+	padding-bottom: 30px
+	// height: 310px
+	@media(min-width:768px)
+		margin: 30px 50px
+.main-slider
+	
+.main_slide
+	height: 310px
+	background-image: url('../../img/slider/zelenui_banner.png')
+	background-position: bottom
+	background-repeat: no-repeat
+	border-radius: 30px
+	text-align: left
+	padding-left: 110px
+	padding-top: 60px
+	h1
+		line-height: 1.1
+		font-size: 36px
+		font-weight: 700
+		margin-bottom: 40px
+	.read_more-link
+		a
+			display: flex
+			img 
+				margin-left: 15px
+			&:hover
+				color: $red
+.slick-arrow
+	display: none!important
+	@media(min-width:768px)
+		display: block!important
+		position: absolute
+		top: 50%
+		cursor: pointer
+		z-index: 1
+	
+.prev 
+	left: 0
+	transform: translate(-50%, -50%)
+	
+.next 
+	right: 0
+	transform: translate(50%, -50%)
+
+
+
+

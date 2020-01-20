@@ -1,0 +1,75 @@
+*:hover
+	transition: 0.2s ease-out
+body
+	min-width: 480px
+	font-family: 'Gilroy', sans-serif
+	font-size: 16px
+	font-weight: 600
+	text-align: center
+	color: #666666
+a
+	text-decoration: none
+	color: inherit
+	cursor: pointer
+	// transition: 0.2s ease-out
+	&:hover
+		cursor: pointer
+		text-decoration: none
+		color: $red
+// img 
+// 	width: 100%
+		
+button
+	background-color: $blue
+	border-radius: 2px
+	border: none
+	color: #FFF
+	padding: 14px 55px
+
+	@media(min-width:576px)
+		// font-size: 13px
+	a
+		&:hover 
+			
+			
+		@media(min-width:576px)
+			// padding: 15px 50px 13px
+
+ul, li 
+	margin: 0
+	padding: 0
+	list-style-type: none
+h2 
+	// font-size: 36px
+	// font-weight: 300
+
+
+
+input, textarea
+	outline: none
+input::-webkit-input-placeholder 
+	color: #c6c6c6
+input::-moz-placeholder /* Firefox 18- */
+	color: #c6c6c6
+input::-moz-placeholder /* Firefox 19+ */
+	color: #c6c6c6
+input::-ms-input-placeholder 
+	color: #c6c6c6
+textarea::-webkit-input-placeholder 
+	color: #c6c6c6
+textarea:-moz-placeholder  /* Firefox 18- */
+	color: #c6c6c6 
+textarea::-moz-placeholder   /* Firefox 19+ */
+	color: #c6c6c6 
+textarea:-ms-input-placeholder   
+	color: #c6c6c6
+
+
+
+.active
+	display: block
+.no-mobile_span
+	display: none
+	@media(min-width:992px)
+		display: inline
+
