@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -30,7 +30,12 @@
     <div class="container">
       <div class="top-header">
         <div class="main-tel">
-          <span>(097) 254-83-34</span><img src="img/header/arrow-small.png" alt="arrow">
+          <a href="#" >(097) 254-83-34<img class="main-tel-arr" src="img/header/arrow-small.png" alt="arrow"></a>
+          <div class="main-tel-recall">
+            <img src="img/header/arrow.png" alt="arrow">
+            <span>Работаем по будням <br>09:00 - 18:00</span>
+            <div class="btn btn_recall_header"> <a href="#"> Вам перезвонить?</a></div>
+          </div>
         </div>
         <div class="payment">
           <a href="#">Оплата и доставка</a>
@@ -66,17 +71,19 @@
           <a href="#"><span class="no-mobile_span">Мои желания</span> <span>(0)</span><img src="img/header/heart.png" alt="heart"></a>
           <a href="#"><span class="no-mobile_span">Корзина</span> <span>(0)</span><img src="img/header/basket.png" alt="basket"></a>
         </div>
-        
       </header>
-    
+      
       <nav>
+
         <div class="logo_nav-mob">
           <div class="mob_btn-close"></div>
           <img src="img/header/logo_mob-menu.png" alt="logo">
         </div>
         <ul class="navigation">
-          <li class="nav_first-level"><a href="#">Активность</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Активность
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Детский транспорт</a></li>
               <li><a href="#">Защитные шлемы, перчатки, аксессуары</a></li>
@@ -86,40 +93,50 @@
               <li><a href="#">Полезности для путешествий</a></li>
             </ul>
           </li>
-          <li class="nav_first-level"><a href="#">Развитие</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Развитие
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
             </ul>
           </li>
-          <li class="nav_first-level"><a href="#">Творчество</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Творчество
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
             </ul>
           </li>
-          <li class="nav_first-level"><a href="#">Малыш</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Малыш
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
             </ul>
           </li>
-          <li class="nav_first-level"><a href="#">Комфорт</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Комфорт
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Познавательная литература</a></li>
             </ul>
           </li>
-          <li class="nav_first-level"><a href="#">Книги</a>
-            <div class="menu-item-icon"></div>
+          <li class="nav_first-level">
+            <a class="menu-item" href="#">Книги
+              <div class="menu-item-icon"></div>
+            </a>
             <ul>
               <li><a href="#">Познавательная литература</a></li>
               <li><a href="#">Азбуки, буквари, учебная литература</a></li>
@@ -132,12 +149,41 @@
           <a href="#"><img src="img/header/basket.png" alt="basket"><span>Корзина</span></a>
           <a href="#"><img src="img/header/box.png" alt="box"><span>Оплата и доставка</span></a>
         </div>
+        <div class="tel-mobile">
+          <a href="tel:+380972548334">(097) 254-83-34</a>
+          <div class="btn_recall btn"><a href="#">Вам перезвонить?</a></div>
+        </div>
+        <div class="lang_mobile">
+          <a href="#">EN</a><a href="#">UA</a>
+        </div>
 
         <!-- <div class="nav-button">Menu</div> -->
       </nav>
-      <div class="nav_mobile">
-
+      
+      <div class="bg-mobile"></div>
+      <div class="popup_discount popup">
+        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+        <div class="popup_title"><span>Подпишитесь и получите</span> скидку 10%</div>
+        <form action="">
+          <input type="text" name="name" class="form-input" placeholder="Введите имя">
+					<input type="text" name="email" class="form-input" placeholder="Введите свой email">
+        </form>
+        <div class="btn-violet btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
       </div>
+
+      <div class="popup_recall popup">
+        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+        <div class="popup_title">Заказать звонок</div>
+        <form action="">
+          <input type="text" name="name" class="form-input" placeholder="Введите имя">
+          <input type="text" name="phone" class="form-input" placeholder="+380">
+          <textarea name="message"  cols="30" rows="10" class="form-textarea" placeholder="Комментарий"></textarea>
+        </form>
+        <div class="btn-violet btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
+      </div>
+
         <!--::::::::::::: // Header::::::::::::: !-->
         <!--::::::::::::: Slider::::::::::::: !-->
       <div class="main-slider-wrapper">
@@ -202,8 +248,14 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="libs/slick/slick.min.js"></script>
-  <script src='build/js/main.js'></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+
+    <script src='libs/slick/slick.min.js'></script>
+    <script src='build/js/main.js'></script>
   </body>
 </html>

@@ -3,10 +3,40 @@
 	@media(min-width:992px)
 		display: flex
 		justify-content: flex-end
-		padding: 7px 0
+		padding: 7px 0 0
+		border-bottom: 1px solid #c6c6c6
 .main-tel
-	span 
-		margin-right: 5px
+	position: relative
+	padding-bottom: 8px
+	.main-tel-arr
+		margin-left: 5px
+	.main-tel-recall
+		position: absolute
+		display: none
+		top: 32px
+		left: 50%
+		transform:  translateX(-50%)
+		width: 170px
+		height: 88px
+		background-color: #fff
+		border-top: 1px solid #c6c6c6
+		z-index: 9
+		img 
+			display: block
+			margin: 0 auto
+			margin-bottom: 5px
+		span 
+			display: block
+			margin-bottom: 10px
+			line-height: 1.2
+			font-size: 12px
+			font-weight: 400
+		.btn_recall_header
+			width: 140px
+			a
+				background-color: $red
+				padding: 5px 10px
+				font-size: 12px
 .payment
 	margin-left: 60px
 	a 
@@ -55,6 +85,7 @@ header
 		@media(min-width:992px)
 			display: none
 	.mobile-menu_btn
+		// z-index:
 		@media(min-width:992px)
 			display: none
 	@media(min-width:992px)
@@ -85,12 +116,19 @@ header
 		height: 36px
 		border: 1px solid  #d9d9d9
 		border-radius: 20px
-		color: #666666
-		font-size: 12px
+		font-size: 16px
 		font-weight: 500
-		padding-left: 10px
 		@media(min-width:768px)
 			width: 270px
+	input::-webkit-input-placeholder 
+		color: #c6c6c6
+	input::-moz-placeholder /* Firefox 18- */
+		color: #c6c6c6
+	input::-moz-placeholder /* Firefox 19+ */
+		color: #c6c6c6
+	input::-ms-input-placeholder 
+		color: #c6c6c6
+		
 	.btm_submit 
 		position: absolute
 		top: 4px
