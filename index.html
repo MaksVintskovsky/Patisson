@@ -3,12 +3,9 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-      <!-- Fonts -->
-
-
       <!-- Bootstrap, CSS -->
   	<link rel="stylesheet" href="build/css/main.css">
 
@@ -168,8 +165,8 @@
         <form action="">
           <input type="text" name="name" class="form-input" placeholder="Введите имя">
 					<input type="text" name="email" class="form-input" placeholder="Введите свой email">
+          <div class="btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
         </form>
-        <div class="btn-violet btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
       </div>
 
       <div class="popup_recall popup">
@@ -181,7 +178,23 @@
           <input type="text" name="phone" class="form-input" placeholder="+380">
           <textarea name="message"  cols="30" rows="10" class="form-textarea" placeholder="Комментарий"></textarea>
         </form>
-        <div class="btn-violet btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
+        <div id="captcha" class="btn"><a href="#">reCAPTCHA</a></div>
+        <div class="btn"><a href="#">ЖДУ ЗВОНКА</a></div>
+      </div>
+      <div class="popup_enter popup">
+        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+        <div class="popup_title">Войти</div>
+        <div class="popup_subtitle">войти через соц. сети</div>
+        <div class="btn btn_sosial"><a href="#">ЖДУ ЗВОНКА</a></div>
+        <div class="btn btn_sosial"><a href="#">ЖДУ ЗВОНКА</a></div>
+        <div class="popup_subtitle">войти через email</div>
+
+        <form>
+          <input type="text" name="email" class="form-input" placeholder="Email@email.com">
+          <input type="text" name="password" class="form-input" placeholder="Введите пароль">
+        </form>
+        <div class="btn"><a href="#">ВОЙТИ</a></div>
       </div>
 
         <!--::::::::::::: // Header::::::::::::: !-->

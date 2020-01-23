@@ -34,29 +34,47 @@
 	width: 270px
 	border: 1px solid #c6c6c6
 	border-radius: 10px
-	margin-bottom: 15px
 .form-input
 	height: 40px
+	margin-bottom: 15px
 .form-textarea
-	height: 40px
+	height: 90px
 
-.btn-violet
-	width: 270px
-	margin-bottom: 40px
-	a 
-		background-color: #b8a4dd
-		font-size: 14px
-		padding: 11px 20px
-		&:focus, &:active, &:hover
-            background-color: darken(#b8a4dd, 10%)
+
 
 	//::::::::::::: Discount::::::::::::: 
 .popup_discount
 	display: none
 	height: 325px
+	.btn
+		margin-bottom: 40px
+		a 
+			background-color: #b8a4dd
+			&:focus, &:active, &:hover
+				background-color: darken(#b8a4dd, 10%)
 
 .popup_recall
-	// display: none
-	// height: 325px
+	display: none
+	padding-bottom: 50px
 	.popup_title
 		margin-bottom: 35px
+	.btn
+		// margin-bottom: 50px
+		a 
+			background-color: $red
+			&:focus, &:active, &:hover
+				background-color: darken($red, 10%)
+#captcha
+	margin: 5px auto 17px
+	a 
+		background-color: #dadada
+		padding: 25px 20px
+		color:#666666
+
+		&:focus, &:active, &:hover
+			background-color: darken(#dadada, 10%)
+
+.popup_enter
+	// display: none
+	.btn_sosial
+		

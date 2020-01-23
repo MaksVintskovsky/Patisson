@@ -1144,31 +1144,31 @@ template {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../../fonts/gilroy/GIlroy-ExtraBold.ttf") format("truetype");
+  src: url("../../fonts/gilroy/GIlroy-extraBold.otf") format("opentype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../../fonts/gilroy/GIlroy-Bold.ttf") format("truetype");
+  src: url("../../fonts/gilroy/GIlroy_bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../../fonts/gilroy/GIlroy-Semibold.ttf") format("truetype");
+  src: url("../../fonts/gilroy/GIlroy_semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../../fonts/gilroy/GIlroy-Medium.ttf") format("truetype");
+  src: url("../../fonts/gilroy/GIlroy_medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url("../../fonts/gilroy/GIlroy-Regular.ttf") format("truetype");
+  src: url("../../fonts/gilroy/GIlroy_regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
@@ -1176,7 +1176,12 @@ template {
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out; }
 
+html {
+  min-width: 480px;
+  width: 100%; }
+
 body {
+  width: 100%;
   min-width: 480px;
   font-family: 'Gilroy', sans-serif;
   font-size: 16px;
@@ -1195,9 +1200,12 @@ a {
     color: #ec494a; }
 
 .btn {
+  width: 270px;
   margin: 0 auto; }
   .btn a {
     display: block;
+    font-size: 14px;
+    padding: 10px 20px;
     border-radius: 10px;
     color: #fff; }
 
@@ -1250,12 +1258,9 @@ textarea::-moz-placeholder {
 
 textarea:-ms-input-placeholder {
   padding-top: 5px;
-  color: #c6c6c6;
+  color: #666666;
   font-size: 12px;
   font-weight: 600; }
-
-.active {
-  display: block; }
 
 .no-mobile_span {
   display: none; }
@@ -1760,31 +1765,43 @@ nav {
 .form-input, .form-textarea {
   width: 270px;
   border: 1px solid #c6c6c6;
-  border-radius: 10px;
-  margin-bottom: 15px; }
+  border-radius: 10px; }
 
 .form-input {
-  height: 40px; }
+  height: 40px;
+  margin-bottom: 15px; }
 
 .form-textarea {
-  height: 40px; }
-
-.btn-violet {
-  width: 270px;
-  margin-bottom: 40px; }
-  .btn-violet a {
-    background-color: #b8a4dd;
-    font-size: 14px;
-    padding: 11px 20px; }
-    .btn-violet a:focus, .btn-violet a:active, .btn-violet a:hover {
-      background-color: #9b7fcf; }
+  height: 90px; }
 
 .popup_discount {
   display: none;
   height: 325px; }
+  .popup_discount .btn {
+    margin-bottom: 40px; }
+    .popup_discount .btn a {
+      background-color: #b8a4dd; }
+      .popup_discount .btn a:focus, .popup_discount .btn a:active, .popup_discount .btn a:hover {
+        background-color: #9b7fcf; }
 
-.popup_recall .popup_title {
-  margin-bottom: 35px; }
+.popup_recall {
+  display: none;
+  padding-bottom: 50px; }
+  .popup_recall .popup_title {
+    margin-bottom: 35px; }
+  .popup_recall .btn a {
+    background-color: #ec494a; }
+    .popup_recall .btn a:focus, .popup_recall .btn a:active, .popup_recall .btn a:hover {
+      background-color: #e71b1c; }
+
+#captcha {
+  margin: 5px auto 17px; }
+  #captcha a {
+    background-color: #dadada;
+    padding: 25px 20px;
+    color: #666666; }
+    #captcha a:focus, #captcha a:active, #captcha a:hover {
+      background-color: #c1c1c1; }
 
 .benefits {
   margin: 30px 20px;
