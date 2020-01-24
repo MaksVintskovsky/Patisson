@@ -3,8 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Bootstrap, CSS -->
   	<link rel="stylesheet" href="build/css/main.css">
@@ -23,40 +23,41 @@
 	<![endif]-->
   </head>
   <body>
+
       <!--::::::::::::: Header::::::::::::: !-->
-    <div class="container">
-      <div class="top-header">
-        <div class="main-tel">
-          <a href="#" >(097) 254-83-34<img class="main-tel-arr" src="img/header/arrow-small.png" alt="arrow"></a>
-          <div class="main-tel-recall">
-            <img src="img/header/arrow.png" alt="arrow">
-            <span>Работаем по будням <br>09:00 - 18:00</span>
-            <div class="btn btn_recall_header"> <a href="#"> Вам перезвонить?</a></div>
-          </div>
-        </div>
-        <div class="payment">
-          <a href="#">Оплата и доставка</a>
-          <a href="#">Акции</a>
-        </div>
-        <div class="pers-cab">
-          <img src="img/header/Profile.png" alt="img">Профиль
-        </div>
-        <div class="lang">
-          <a href="#">EN</a><a href="#">UA</a>
+    <div class="top-header">
+      <div class="main-tel">
+        <a href="#" >(097) 254-83-34<img class="main-tel-arr" src="img/header/arrow-small.png" alt="arrow"></a>
+        <div class="main-tel-recall">
+          <img src="img/header/arrow.png" alt="arrow">
+          <span>Работаем по будням <br>09:00 - 18:00</span>
+          <div class="btn btn_recall btn_recall_header"> <a href="#"> Вам перезвонить?</a></div>
         </div>
       </div>
-      <div class="top-mobile-header">
+      <div class="payment">
+        <a href="#">Оплата и доставка</a>
+        <a href="#">Акции</a>
+      </div>
+      <div class="pers-cab">
+        <img src="img/header/Profile.png" alt="img">Профиль
+      </div>
+      <div class="lang">
+        <a href="#">EN</a><a href="#">UA</a>
+      </div>
+    </div>
+
+    <div class="top-mobile-header">
         <div class="logo"><a href="#"><img src="img/header/logo.png" alt="logo"></a></div>
         <h1>Интернет магазин <br>детских игрушек</h1>
-      </div>
-      <header>
+    </div>
+
+    <header>
         <div class="logo"><a href="#"><img src="img/header/logo.png" alt="logo"></a></div>
         <div class="mobile-menu_btn"><a href="#"><img src="img/header/gamb.png"  alt="menu"></a></div>
-        <!-- <div class="title"><h1>Интернет магазин детских игрушек</h1></div> -->
         <div class="main-search-wrapper">
           <form class='main-search'>
             <input type="text" placeholder="Искать к примеру, детские игрушки">
-            <div class="btm_submit" type="submit">
+            <div class="btn_submit" type="submit">
               <img src="img/header/search.png" alt="search">
             </div>
           </form>
@@ -68,10 +69,9 @@
           <a href="#"><span class="no-mobile_span">Мои желания</span> <span>(0)</span><img src="img/header/heart.png" alt="heart"></a>
           <a href="#"><span class="no-mobile_span">Корзина</span> <span>(0)</span><img src="img/header/basket.png" alt="basket"></a>
         </div>
-      </header>
-      
-      <nav>
-
+    </header>
+    
+    <nav>
         <div class="logo_nav-mob">
           <div class="mob_btn-close"></div>
           <img src="img/header/logo_mob-menu.png" alt="logo">
@@ -155,50 +155,54 @@
         </div>
 
         <!-- <div class="nav-button">Menu</div> -->
-      </nav>
-      
-      <div class="bg-mobile"></div>
-      <div class="popup_discount popup">
-        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
-        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
-        <div class="popup_title"><span>Подпишитесь и получите</span> скидку 10%</div>
-        <form action="">
-          <input type="text" name="name" class="form-input" placeholder="Введите имя">
-					<input type="text" name="email" class="form-input" placeholder="Введите свой email">
-          <div class="btn"><a href="#">ПОЛУЧИТЬ СКИДКУ</a></div>
-        </form>
-      </div>
+    </nav>
+    
+    <div class="bg-mobile"></div>
+    <div class="popup_discount popup">
+      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+      <div class="popup_title"><span>Подпишитесь и получите</span> скидку 10%</div>
+      <form action="">
+        <input type="text" name="name" class="form-input" placeholder="Введите имя">
+        <input type="text" name="email" class="form-input" placeholder="Введите свой email">
+        <input type="submit"class="form-submit" value="ПОЛУЧИТЬ СКИДКУ">
+      </form>
+    </div>
 
-      <div class="popup_recall popup">
-        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
-        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
-        <div class="popup_title">Заказать звонок</div>
-        <form action="">
-          <input type="text" name="name" class="form-input" placeholder="Введите имя">
-          <input type="text" name="phone" class="form-input" placeholder="+380">
-          <textarea name="message"  cols="30" rows="10" class="form-textarea" placeholder="Комментарий"></textarea>
-        </form>
+    <div class="popup_recall popup">
+      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+      <div class="popup_title">Заказать звонок</div>
+      <form action="">
+        <input type="text" name="name" class="form-input" placeholder="Введите имя">
+        <input type="text" name="phone" class="form-input" placeholder="+380">
+        <textarea name="message"  cols="30" rows="10" class="form-textarea" placeholder="Комментарий"></textarea>
         <div id="captcha" class="btn"><a href="#">reCAPTCHA</a></div>
-        <div class="btn"><a href="#">ЖДУ ЗВОНКА</a></div>
+        <input type="submit"class="form-submit" value="ЖДУ ЗВОНКА">
+      </form>
+    </div>
+    <div class="popup_enter popup">
+      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+      <div class="popup_title">Войти</div>
+      <div class="popup_subtitle">войти через соц. сети</div>
+      <div class="btn_sosial-wrapper">
+        <input type="submit" id="btn_facebook" class="form-submit btn_sosial" value="Facebook">
+        <input type="submit" id="btn_google" class="form-submit btn_sosial" value="Google">
       </div>
-      <div class="popup_enter popup">
-        <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
-        <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
-        <div class="popup_title">Войти</div>
-        <div class="popup_subtitle">войти через соц. сети</div>
-        <div class="btn btn_sosial"><a href="#">ЖДУ ЗВОНКА</a></div>
-        <div class="btn btn_sosial"><a href="#">ЖДУ ЗВОНКА</a></div>
-        <div class="popup_subtitle">войти через email</div>
-
-        <form>
-          <input type="text" name="email" class="form-input" placeholder="Email@email.com">
-          <input type="text" name="password" class="form-input" placeholder="Введите пароль">
-        </form>
-        <div class="btn"><a href="#">ВОЙТИ</a></div>
-      </div>
+      <div class="popup_subtitle">войти через email</div>
+      <form>
+        <input type="text" name="email" class="form-input" placeholder="Email@email.com">
+        <input type="text" name="password" class="form-input" placeholder="Введите пароль">
+        <input type="submit"class="form-submit" value="ВОЙТИ">
+      </form>
+      <span id="psw_restore">забыли пароль</span>
+      <div class="registration"><span>регистрация</span></div>
+    </div>
 
         <!--::::::::::::: // Header::::::::::::: !-->
         <!--::::::::::::: Slider::::::::::::: !-->
+    <div class="container">
       <div class="main-slider-wrapper">
         <div class="main-slider">
           <div class="main_slide">
@@ -244,10 +248,168 @@
           </div>
         </div>
       </div>
-        <!--::::::::::::: //Benefits::::::::::::: !-->
-        <!--::::::::::::: News::::::::::::: !-->
+    </div>
     
-        <!--::::::::::::: //News::::::::::::: !-->
+        <!--::::::::::::: //Benefits::::::::::::: !-->
+        <!--::::::::::::: Present::::::::::::: !-->
+      <div class="present">
+        <div class="present_title">
+          <img src="img/present/present_title.jpg" alt="present">
+          <h1>Для чего вам <br>нужен подарок?</h1>
+        </div>
+        <div class="present_goal">
+          <div class="container">
+            <div class="row ">
+              <div class="col-12 col-lg-4 ">
+                <a href="#">
+                  <div class="present-img">
+                    <img src="img/present/present_1-big.png" alt="photo">
+                    <img id="present_arrow-left" src="img/present/present_arr-left.png" alt="arrow">
+                    <h2 class="present-img-title">Удивить</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="#">
+                  <div class="present-img">
+                    <img src="img/present/present_2-big.png" alt="photo">
+                    <img id="present_arrow-down" src="img/present/present_arr-down.png" alt="arrow">
+                    <h2 class="present-img-title">Поднять настроение</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="#">
+                  <div class="present-img">
+                    <img src="img/present/present_3-big.png" alt="photo">
+                    <img id="present_arrow-right" src="img/present/present_arr-right.png" alt="arrow">
+                    <h2 class="present-img-title">Яркое событие</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--::::::::::::: //Present::::::::::::: !-->
+        <!--::::::::::::: Happy::::::::::::: !-->
+      <div class="happy">
+        <div class="container">
+          <div class="happy_mob">
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2">
+                <div class="row">
+                  <div class="col-12">
+                    <img src="img/why/why_main.png" alt="picture">
+                    <div class="happy_title_main">
+                      <span>Почему важно<br> радовать детей<br> подарками</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/why/why_1.png" alt="picture">
+                    <div class="happy_title">
+                      <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/why/why_2.png" alt="picture">
+                    <div class="happy_title">
+                      <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/why/why_3.png" alt="picture">
+                    <div class="happy_title happy_title--white">
+                      <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/why/why_4.png" alt="picture">
+                    <div class="happy_title">
+                      <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
+                    </div>
+                  </div>
+                  <div class="col-6 no-gutters">
+                    <div class="col-12">
+                      <img src="img/why/why_5.png" alt="picture">
+                      <div class="happy_title">
+                        <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <img src="img/why/why_kid.png" alt="picture">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/why/why_knopka.png" alt="picture">
+                    <div class="happy_title_main happy_title_button">
+                      <span>Согласны<br> с нами?</span>
+                      <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="happy_desc">
+          <div class="happy_desc_left_side">
+            <div class="img">
+              <img src="img/why/why_main.png" alt="picture">
+              <div class="happy_title_main">
+                <span>Почему важно<br> радовать детей<br> подарками</span>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="img">
+                <img src="img/why/why_4.png" alt="picture">
+                <div class="happy_title">
+                  <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
+                </div>
+              </div>
+              <div class="img">
+                <img src="img/why/why_5.png" alt="picture">
+                <div class="happy_title">
+                  <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="happy_desc_right_side">
+            <div class="flex">
+              <div class="img">
+                <img src="img/why/why_1.png" alt="picture">
+                <div class="happy_title">
+                  <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
+                </div>
+              </div>
+              <div class="img">
+                <img src="img/why/why_2.png" alt="picture">
+                <div class="happy_title">
+                  <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
+                </div>
+              </div>
+              <div class="img">
+                <img src="img/why/why_3.png" alt="picture">
+                <div class="happy_title happy_title--white">
+                  <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="img"><img src="img/why/why_kid.png" alt="picture"></div>
+              <div class="img">
+                <img src="img/why/why_knopka.png" alt="picture">
+                <div class="happy_title_main happy_title_button">
+                  <span>Согласны<br> с нами?</span>
+                  <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--::::::::::::: //Happy::::::::::::: !-->
     
         <!--::::::::::::: Footer::::::::::::: !-->
       <footer>
@@ -256,6 +418,7 @@
         </div>
       </footer>
     </div>
+    <!-- </div> -->
   
       <!--::::::::::::: //Footer::::::::::::: !-->
 

@@ -47,7 +47,16 @@ $(document).ready(function(){
     $('.nav_first-level ul').not($content).slideUp(300);
 
   });
-
+  $('.pers-cab').on('click', function(){
+    $('.popup_enter').show();
+  });
+  $('.btn_recall').on('click', function(){
+    $('.popup_recall').show();
+  });
+  // $('.popup-close').on('click', function(){
+  //   $('.popup').hide();
+  // });
+  
   $('.popup-close').on('click', function(){
     $('.popup').hide();
   });

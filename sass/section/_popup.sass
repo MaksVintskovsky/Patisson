@@ -1,7 +1,9 @@
 .popup
 	width: 338px
+	padding-top: 45px
 	border-radius: 10px
 	background: #fff
+	font-weight: 700
 	position: absolute
 	top: 60%
 	left: 50%
@@ -24,12 +26,14 @@
 	color: #231e1f
 	font-size: 26px
 	line-height: 1.2
-	font-weight: 700
 	width: 265px
 	text-align: center
-	margin: 60px auto  15px
+	margin: 0 auto
 	span 
 		font-weight: 600
+.popup_subtitle
+	color: #231e1f
+	margin-bottom: 10px
 .form-input, .form-textarea
 	width: 270px
 	border: 1px solid #c6c6c6
@@ -40,30 +44,40 @@
 .form-textarea
 	height: 90px
 
+.form-submit
+	display: block
+	width: 270px
+	font-size: 14px
+	font-weight: 700
+	color: #fff
+	border-radius: 10px
+	border: none
+	padding: 10px 20px
+	margin: 0 auto
+
 
 
 	//::::::::::::: Discount::::::::::::: 
 .popup_discount
 	display: none
 	height: 325px
-	.btn
+	.form-submit
 		margin-bottom: 40px
-		a 
-			background-color: #b8a4dd
-			&:focus, &:active, &:hover
-				background-color: darken(#b8a4dd, 10%)
+		background-color: #b8a4dd
+		&:focus, &:active, &:hover
+			background-color: darken(#b8a4dd, 10%)
 
 .popup_recall
 	display: none
 	padding-bottom: 50px
 	.popup_title
 		margin-bottom: 35px
-	.btn
+	.form-submit
 		// margin-bottom: 50px
-		a 
-			background-color: $red
-			&:focus, &:active, &:hover
-				background-color: darken($red, 10%)
+		background-color: $red
+		&:focus, &:active, &:hover
+			background-color: darken($red, 10%)
+
 #captcha
 	margin: 5px auto 17px
 	a 
@@ -75,6 +89,47 @@
 			background-color: darken(#dadada, 10%)
 
 .popup_enter
-	// display: none
-	.btn_sosial
-		
+	display: none
+	.form-submit
+		// margin-bottom: 50px
+		background-color: $green
+		&:focus, &:active, &:hover
+			background-color: darken($green, 10%)
+	.btn_sosial-wrapper
+		width: 300px
+		margin: 0px auto 35px
+		display: flex
+		justify-content: space-between
+		.btn_sosial
+			width: 143px
+			margin: 0
+			font-weight: 500
+			font-size: 12px
+		#btn_facebook
+			background-color: #3b5a94
+			&:focus, &:active, &:hover
+				background-color: darken(#3b5a94, 10%)
+		#btn_google
+			background-color: #f9463e
+			&:focus, &:active, &:hover
+				background-color: darken(#f9463e, 10%)
+	#psw_restore
+		display: inline-block
+		font-size: 12px
+		color: #231e1f
+		padding: 10px
+		cursor: pointer
+	.registration
+		height: 75px
+		border-top: 1px solid #919191
+		padding-top: 20px
+		span 
+			color: $green
+			text-transform: uppercase 
+			padding: 10px
+			cursor: pointer
+			&:focus, &:active, &:hover
+				color: darken($green, 10%)
+
+
+ 

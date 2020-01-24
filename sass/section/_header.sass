@@ -59,8 +59,9 @@
 .top-mobile-header
 	background-color: #f0f0f0
 	display: flex
-	justify-content: space-around
+	justify-content: start
 	padding: 20px 60px
+	margin: 0 auto
 	h1 
 		color: #333333
 		font-size: 26px
@@ -68,16 +69,19 @@
 		line-height: 1.2
 		letter-spacing: -1px
 		margin-left: 35px
+	@media(min-width:668px)
+		padding: 20px 140px
 	@media(min-width:992px)
 		display: none
+
 header
+	padding: 10px 40px
+	border-bottom: 1px solid #c6c6c6
+	border-top: 1px solid #c6c6c6
 	background-color: #fff
 	display: flex
 	justify-content: space-between
 	align-items: center
-	padding: 10px 20px
-	border-bottom: 1px solid #c6c6c6
-	border-top: 1px solid #c6c6c6
 	.logo
 		display: none
 	.pers-cab
@@ -129,7 +133,7 @@ header
 	input::-ms-input-placeholder 
 		color: #c6c6c6
 		
-	.btm_submit 
+	.btn_submit 
 		position: absolute
 		top: 4px
 		right: 4px

@@ -1,0 +1,89 @@
+.present
+	max-width: 1200px
+	display: flex
+	flex-direction: column
+	background-color: #99c3d3
+	// max-width: 505px
+	margin: 10px auto 0
+
+	@media(min-width:992px)
+		flex-direction: row
+		justify-content: space-between
+.present_title
+	position: relative
+	border-bottom: 1px solid #fff
+	text-align: left
+	h1 
+		position: absolute
+		top: 65px
+		left: 230px
+		color: #ffffff
+		font-size: 28px
+		font-weight: 700
+		line-height: 1.2
+		@media(min-width:500px)
+			left: 250px
+	img 
+		width: 100%
+		@media(min-width:576px)
+			width: auto
+	@media(min-width:992px)
+		border: none
+
+.present_goal
+	padding: 50px 0 40px
+	// width: 100%
+	@media(min-width:992px)
+		padding: 30px 30px 0 0
+
+.present-img
+	width: 224px
+	margin: 0 auto 15px
+	position: relative
+
+	@media(min-width:992px)
+		width: 142px
+		
+	@media(min-width:1100px)
+		margin: 0 30px 0
+	img 
+		
+		@media(min-width:992px)
+			width: 100%
+	h2 
+		position: absolute
+		bottom: 25px
+		left: 50%
+		transform: translateX(-50%)
+		color: #333333
+		font-size: 24px
+		font-weight: 700
+		line-height: 0.9
+		@media(min-width:992px)
+			font-size: 15px
+			bottom: 15px
+	
+#present_arrow-left
+	position: absolute
+	bottom: 7px
+	left: 22px
+	@media(min-width:992px)
+		width: 24px
+		bottom: -1px
+		left: 22px
+#present_arrow-down
+	position: absolute
+	bottom: -7px
+	right: 55px
+	@media(min-width:992px)
+		width: 24px
+		bottom: -10px
+		right: 44px
+#present_arrow-right
+	position: absolute
+	bottom: 7px
+	right: 22px
+	@media(min-width:992px)
+		width: 24px
+		bottom: -1px
+		right: 22px
