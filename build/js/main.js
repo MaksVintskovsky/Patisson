@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-  let menu = $('nav')
-  let bg = $('.bg-popup')
-  let popup = $('.popup')
+  let menu = $('nav');
+  let bg = $('.bg-popup');
+  let popup = $('.popup');
 
   $('.main-slider').slick({
     prevArrow: "<img src='img/slider/slide-left_arrow.png' class='prev' alt='1'>",
@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('.product-slider').slick({
     prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
     nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
-    slidesToShow: 4,
+    
     responsive: [
       {
         breakpoint: 1200,
@@ -32,7 +32,8 @@ $(document).ready(function(){
           slidesToShow: 1
         }
       }
-    ]
+    ],
+    slidesToShow: 4
   });
   $('.views-slider').slick({
     prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
@@ -84,7 +85,6 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           dots: true,
-          // arrow: false
         }
       }
     ]
@@ -138,23 +138,23 @@ $(document).ready(function(){
   });
   $('.pers-cab').on('click', function(){
     $('.popup_enter').show();
-    bg.show()
+    bg.show();
   });
   $('.btn_recall').on('click', function(){
     $('.popup_recall').show();
-    bg.show()
+    bg.show();
   });
   $('.recall').on('click', function(){
     $('.popup_recall').show();
-    bg.show()
+    bg.show();
   });
   $('.basket_btn').on('click', function(){
     $('.basket').toggle();
-  })
+  });
   
   $('.popup-close').on('click', function(){
     popup.hide();
-    bg.hide(200)
+    bg.hide(200);
   });
 
   $('.main-tel').on('mouseenter', function(){
@@ -166,13 +166,13 @@ $(document).ready(function(){
 
   $('.brands-btn').on('click', function(){
     $('#row-hide').css('display', 'flex');
-    $(this).hide()
+    $(this).hide();
   });
   
   $(".tab-content").not(":first").hide();
   $(".card-tab").click(function() {
     $(".card-tab").removeClass("active").eq($(this).index()).addClass("active");
-    $(".tab-content").hide().eq($(this).index()).fadeIn()
+    $(".tab-content").hide().eq($(this).index()).fadeIn();
   }).eq(0).addClass("active");
   
-})
+});
