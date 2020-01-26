@@ -1,6 +1,6 @@
 .basket
     display: none
-    width: 412px
+    width: 440px
     margin: 35px auto
     color: #333
     font-weight: 700
@@ -9,6 +9,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding: 0 10px
 .basket-clear
     color: #0089d5
     font-size: 18px
@@ -26,6 +27,7 @@
         font-weight: 400
         transform: rotate(45deg)
 .basket-goods
+    margin-right: 25px
 .basket-item
     display: flex
     position: relative
@@ -73,12 +75,47 @@
     // margin-bottom: 5px
     font-size: 12px
     font-weight: 700
+    color: #000
 .basket-price_num
-    // font-size: 14px
+    font-size: 14px
     margin-left: 40px
+    color: #000
 .basket-item_close
     position: absolute
     top: 50%
     right: -25px
     transform: translateY(-50%)
-.basket-resume
+.basket-total
+    background-color: #f0f0f0
+    border-radius: 15px
+    padding: 40px 75px 20px
+    margin-top: 30px
+    font-size: 14px
+    font-weight: 600
+    color: #666666
+    strong 
+        font-weight: 700
+        color: #000
+    .total-goods, .total-delivery, .total
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 5px
+    .total-goods
+    .total-delivery
+        border-bottom: 1px solid #333333
+        margin-bottom: 7px
+    .total
+    #basket_submit
+        width: 224px
+        height: 45px
+        background-color: $green
+        font-size: 19px
+        font-weight: 600
+        margin-top: 35px
+    .continue
+        text-align: center
+        margin-top: 5px
+        span
+            border-bottom: 1px dotted #333
+

@@ -12,34 +12,90 @@ $(document).ready(function(){
   $('.product-slider').slick({
     prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
     nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
-    centerPadding: '0px',
     slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          // centerMode: true,
-          centerPadding: '0px',
           slidesToShow: 3
         }
       },
       {
         breakpoint: 940,
         settings: {
-          // centerMode: true,
-          centerPadding: '0px',
           slidesToShow: 2
         }
       },
       {
         breakpoint: 768,
         settings: {
-          // centerMode: true,
-          // centerPadding: '40px',
           slidesToShow: 1
         }
       }
     ]
+  });
+  $('.views-slider').slick({
+    prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
+    nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  $('.card-slider-top').slick({
+    prevArrow: "<img src='img/slider/arr-violet_left.png' class='prev' alt='1'>",
+    nextArrow: "<img src='img/slider/arr-violet_right.png' class='next' alt='2'>",
+    slidesToShow: 1,
+    fade: true,
+    asNavFor: '.card-slider-bottom',
+    focusOnSelect: true,
+    initialSlide: 3,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          // arrow: false
+        }
+      }
+    ]
+  });
+  $('.card-slider-bottom').slick({
+    dots: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.card-slider-top',
+    focusOnSelect: true
+
   });
 
 
@@ -55,13 +111,11 @@ $(document).ready(function(){
     bg.hide(200);
   });
   $(document).on('mouseup', function(e){
-
     if(e.target != menu[0] && menu.has(e.target).length === 0 && e.target != popup && popup.has(e.target).length === 0) {
       menu.hide();
       bg.hide(200);
       popup.hide(200);
     }
-    
   });
       
   $('.menu-item').on('click', function(e){
@@ -94,9 +148,9 @@ $(document).ready(function(){
     $('.popup_recall').show();
     bg.show()
   });
-  // $('.popup-close').on('click', function(){
-  //   $('.popup').hide();
-  // });
+  $('.basket_btn').on('click', function(){
+    $('.basket').toggle();
+  })
   
   $('.popup-close').on('click', function(){
     popup.hide();
@@ -115,5 +169,10 @@ $(document).ready(function(){
     $(this).hide()
   });
   
+  $(".tab-content").not(":first").hide();
+  $(".card-tab").click(function() {
+    $(".card-tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tab-content").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("active");
   
 })

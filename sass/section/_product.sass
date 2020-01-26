@@ -1,9 +1,14 @@
 .product-slider-wrapper
     margin: 50px 65px
+    h2 
+        text-align: left
+        margin-bottom: 45px
+        @media(min-width:992px)
+            margin-bottom: 25px
     @media(min-width:768px)
         margin: 70px 85px 40px
 .product-slider
-    display: flex
+
 .product-item
     width: 330px
     text-align: left
@@ -20,7 +25,7 @@
         height: 220px
     img 
         margin: 0 auto
-        height: 100%
+        max-height: 100%
 
 .product-code
     color: #c6c6c6
@@ -57,6 +62,7 @@
 
 .product-like
     width: 22px
+    margin-left: 30px
     @media(min-width:768px)
         width: auto
 .product-buy
