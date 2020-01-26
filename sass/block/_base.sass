@@ -1,3 +1,41 @@
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th
+    position: relative
+    min-height: 1px
+    padding-right: 10px
+    padding-left: 10px
+    width: 20%
+    float: left
+.col-5-th
+	-webkit-box-flex: 0
+	-webkit-flex: 0 0 20%
+	-ms-flex: 0 0 20%
+	flex: 0 0 20%
+	max-width: 20%
+@media (min-width: 768px)
+	.col-sm-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+@media (min-width: 992px)
+	.col-md-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+@media (min-width: 1200px)
+	.col-lg-5th
+		-webkit-box-flex: 0
+		-webkit-flex: 0 0 20%
+		-ms-flex: 0 0 20%
+		flex: 0 0 20%
+		max-width: 20%
+	
 *:hover
 	transition: 0.2s ease-out
 html
@@ -6,8 +44,8 @@ html
 body
 	width: 100%
 	min-width: 480px
-	// max-width: 1200px
-	// margin: 0 auto
+	max-width: 1200px
+	margin: 0 auto
 	font-family: 'Gilroy', sans-serif
 	font-size: 16px
 	font-weight: 600
@@ -43,14 +81,32 @@ ul, li
 	padding: 0
 	list-style-type: none
 h2 
-	// font-size: 36px
-	// font-weight: 300
+	color: #333333
+	font-size: 28px
+	font-weight: 700
+	// text-align: left
+	@media(min-width:992px)
+		font-size: 24px
+h3 
+	color: #333333
+	font-size: 24px
+	font-weight: 700
+	text-align: left
+	@media(min-width:992px)
+		font-size: 20px
+p 
+	color: #706f6f
+	font-size: 14px
+	font-weight: 400
+	line-height: 25px
+	text-align: left
 
 
 
 input, textarea
 	outline: none
 	padding-left: 15px
+	text-overflow: ellipsis
 input::-webkit-input-placeholder 
 	color: #666666
 	font-size: 12px
@@ -101,4 +157,5 @@ textarea:-ms-input-placeholder
 		display: inline
 .flex
 	display: flex
+
 

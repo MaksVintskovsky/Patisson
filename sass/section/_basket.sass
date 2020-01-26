@@ -1,0 +1,84 @@
+.basket
+    display: none
+    width: 412px
+    margin: 35px auto
+    color: #333
+    font-weight: 700
+    text-align: left
+.basket-title
+    display: flex
+    align-items: center
+    justify-content: space-between
+.basket-clear
+    color: #0089d5
+    font-size: 18px
+    font-weight: 400
+    border-bottom: 1px dotted #0089d5
+    // padding: 5px
+    margin-bottom: 5px
+    cursor: pointer
+    position: relative
+    &::after
+        position: absolute
+        content: '+'
+        width: 18px
+        font-size: 22px
+        font-weight: 400
+        transform: rotate(45deg)
+.basket-goods
+.basket-item
+    display: flex
+    position: relative
+    border: 1px solid #c6c6c6
+    border-radius: 15px
+    margin-top: 20px
+.basket-item_img
+    max-width: 145px
+    border-left: 1px solid #c6c6c6
+    border-right: 1px solid #c6c6c6
+    margin-left: 12px
+    img 
+        width: 100%
+.basket-item_descr
+    // max-width: 255px
+    margin: 20px auto
+.basket-item_title
+    width: 210px
+    font-size: 12px
+    font-weight: 700
+.basket-item_code
+    color: #b2b2b2
+    font-size: 14px
+    margin: 15px 0
+
+.basket-item_price
+    display: flex
+    align-items: center
+.basket-item_count
+    display: flex
+    align-items: center
+.basket-item_count-dell, .basket-item_count-add
+    padding: 0 2px
+    font-size: 20px
+    color: $purple
+    cursor: pointer
+.basket-item_count-add
+
+.basket-item_count-value
+    width: 27px
+    height: 21px
+    border-radius: 8px
+    border: 1px solid #c6c6c6
+    padding-left: 10px
+    // margin-bottom: 5px
+    font-size: 12px
+    font-weight: 700
+.basket-price_num
+    // font-size: 14px
+    margin-left: 40px
+.basket-item_close
+    position: absolute
+    top: 50%
+    right: -25px
+    transform: translateY(-50%)
+.basket-resume

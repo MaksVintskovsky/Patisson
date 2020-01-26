@@ -4,8 +4,8 @@
 	border-radius: 10px
 	background: #fff
 	font-weight: 700
-	position: absolute
-	top: 60%
+	position: fixed
+	top: 50%
 	left: 50%
 	transform:  translate(-50%, -50%)
 	z-index: 10
@@ -16,7 +16,7 @@
 	right: 15px
 	padding: 10px
 	cursor: pointer
-.bg_popup
+.bg_popup-img
 	position: absolute
 	top: 57px
 	left: 0px
@@ -55,9 +55,19 @@
 	padding: 10px 20px
 	margin: 0 auto
 
+	//::::::::::::: bg-popup::::::::::::: 
+.bg-popup
+	position: absolute
+	display: none
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background: rgba(151,151,151, .7)
+	z-index: 7
+	@media(min-width:992px)
+		// display: none!important
 
-
-	//::::::::::::: Discount::::::::::::: 
 .popup_discount
 	display: none
 	height: 325px
@@ -130,6 +140,3 @@
 			cursor: pointer
 			&:focus, &:active, &:hover
 				color: darken($green, 10%)
-
-
- 

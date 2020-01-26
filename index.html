@@ -156,21 +156,22 @@
 
         <!-- <div class="nav-button">Menu</div> -->
     </nav>
-    
-    <div class="bg-mobile"></div>
+        <!--::::::::::::: // Header::::::::::::: !-->
+
+        <!--::::::::::::: popup::::::::::::: !-->
+    <div class="bg-popup"></div>
     <div class="popup_discount popup">
-      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="bg_popup-img" src="img/bg/bg_discount.png" alt="bg">
       <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
       <div class="popup_title"><span>Подпишитесь и получите</span> скидку 10%</div>
-      <form action="">
+      <form>
         <input type="text" name="name" class="form-input" placeholder="Введите имя">
         <input type="text" name="email" class="form-input" placeholder="Введите свой email">
         <input type="submit"class="form-submit" value="ПОЛУЧИТЬ СКИДКУ">
       </form>
     </div>
-
     <div class="popup_recall popup">
-      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="bg_popup-img" src="img/bg/bg_discount.png" alt="bg">
       <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
       <div class="popup_title">Заказать звонок</div>
       <form action="">
@@ -182,7 +183,7 @@
       </form>
     </div>
     <div class="popup_enter popup">
-      <img class="bg_popup" src="img/bg/bg_discount.png" alt="bg">
+      <img class="bg_popup-img" src="img/bg/bg_discount.png" alt="bg">
       <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
       <div class="popup_title">Войти</div>
       <div class="popup_subtitle">войти через соц. сети</div>
@@ -199,8 +200,59 @@
       <span id="psw_restore">забыли пароль</span>
       <div class="registration"><span>регистрация</span></div>
     </div>
-
-        <!--::::::::::::: // Header::::::::::::: !-->
+    
+        <!--::::::::::::: // popup::::::::::::: !-->
+        <!--::::::::::::: Basket::::::::::::: !-->
+    <div class="basket">
+      <div class="basket-title">
+        <h2>Ваша корзина</h2><div class="basket-clear">Очистить корзину</div>
+      </div>
+      <div class="basket-goods">
+        <div class="basket-item">
+          <div class="basket-item_img">
+            <img src="img/product/img-prod_2.jpg" alt="img">
+          </div>
+          <div class="basket-item_descr">
+            <div class="basket-item_title">
+              Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)
+            </div>
+            <div class="basket-item_code">Артикул: 560562</div>
+            <div class="basket-item_price">
+              <div class="basket-item_count">
+                <span class="basket-item_count-dell">-</span>
+                <input type="text" class="basket-item_count-value" value="1">
+                <span class="basket-item_count-add">+</span>
+              </div>
+              <div class="basket-price_num">1 500 грн</div>
+            </div>
+          </div>
+          <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
+        </div>
+        <div class="basket-item">
+          <div class="basket-item_img">
+            <img src="img/product/img-prod_2.jpg" alt="img">
+          </div>
+          <div class="basket-item_descr">
+            <div class="basket-item_title">
+              Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)
+            </div>
+            <div class="basket-item_code">Артикул: 560562</div>
+            <div class="basket-item_price">
+              <div class="basket-item_count">
+                <span class="basket-item_count-dell">-</span>
+                <input type="text" class="basket-item_count-value" value="1">
+                <span class="basket-item_count-add">+</span>
+              </div>
+              <div class="basket-price_num">1 500 грн</div>
+            </div>
+          </div>
+          <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
+        </div>
+      </div>
+      <div class="basket-resume"></div>
+    </div>
+        <!--::::::::::::: // Basket::::::::::::: !-->
+        
         <!--::::::::::::: Slider::::::::::::: !-->
     <div class="container">
       <div class="main-slider-wrapper">
@@ -252,171 +304,433 @@
     
         <!--::::::::::::: //Benefits::::::::::::: !-->
         <!--::::::::::::: Present::::::::::::: !-->
-      <div class="present">
-        <div class="present_title">
-          <img src="img/present/present_title.jpg" alt="present">
-          <h1>Для чего вам <br>нужен подарок?</h1>
-        </div>
-        <div class="present_goal">
-          <div class="container">
-            <div class="row ">
-              <div class="col-12 col-lg-4 ">
-                <a href="#">
-                  <div class="present-img">
-                    <img src="img/present/present_1-big.png" alt="photo">
-                    <img id="present_arrow-left" src="img/present/present_arr-left.png" alt="arrow">
-                    <h2 class="present-img-title">Удивить</h2>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-lg-4">
-                <a href="#">
-                  <div class="present-img">
-                    <img src="img/present/present_2-big.png" alt="photo">
-                    <img id="present_arrow-down" src="img/present/present_arr-down.png" alt="arrow">
-                    <h2 class="present-img-title">Поднять настроение</h2>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12 col-lg-4">
-                <a href="#">
-                  <div class="present-img">
-                    <img src="img/present/present_3-big.png" alt="photo">
-                    <img id="present_arrow-right" src="img/present/present_arr-right.png" alt="arrow">
-                    <h2 class="present-img-title">Яркое событие</h2>
-                  </div>
-                </a>
-              </div>
+    <div class="present">
+      <div class="present_title">
+        <img src="img/present/present_title.jpg" alt="present">
+        <h1>Для чего вам <br>нужен подарок?</h1>
+      </div>
+      <div class="present_goal">
+        <div class="container">
+          <div class="row ">
+            <div class="col-12 col-lg-4 ">
+              <a href="#">
+                <div class="present-img">
+                  <img src="img/present/present_1-big.png" alt="photo">
+                  <img id="present_arrow-left" src="img/present/present_arr-left.png" alt="arrow">
+                  <h2 class="present-img-title">Удивить</h2>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-4">
+              <a href="#">
+                <div class="present-img">
+                  <img src="img/present/present_2-big.png" alt="photo">
+                  <img id="present_arrow-down" src="img/present/present_arr-down.png" alt="arrow">
+                  <h2 class="present-img-title">Поднять настроение</h2>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-4">
+              <a href="#">
+                <div class="present-img">
+                  <img src="img/present/present_3-big.png" alt="photo">
+                  <img id="present_arrow-right" src="img/present/present_arr-right.png" alt="arrow">
+                  <h2 class="present-img-title">Яркое событие</h2>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
         <!--::::::::::::: //Present::::::::::::: !-->
         <!--::::::::::::: Happy::::::::::::: !-->
-      <div class="happy">
-        <div class="container">
-          <div class="happy_mob">
-            <div class="row">
-              <div class="col-12 col-md-8 offset-md-2">
-                <div class="row">
+    <div class="happy">
+      <div class="container">
+        <div class="happy_mob">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+              <div class="row">
+                <div class="col-12">
+                  <img src="img/why/why_main.png" alt="picture">
+                  <div class="happy_title_main">
+                    <span>Почему важно<br> радовать детей<br> подарками</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img src="img/why/why_1.png" alt="picture">
+                  <div class="happy_title">
+                    <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img src="img/why/why_2.png" alt="picture">
+                  <div class="happy_title">
+                    <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img src="img/why/why_3.png" alt="picture">
+                  <div class="happy_title happy_title--white">
+                    <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img src="img/why/why_4.png" alt="picture">
+                  <div class="happy_title">
+                    <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
+                  </div>
+                </div>
+                <div class="col-6 no-gutters">
                   <div class="col-12">
-                    <img src="img/why/why_main.png" alt="picture">
-                    <div class="happy_title_main">
-                      <span>Почему важно<br> радовать детей<br> подарками</span>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <img src="img/why/why_1.png" alt="picture">
+                    <img src="img/why/why_5.png" alt="picture">
                     <div class="happy_title">
-                      <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
+                      <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <img src="img/why/why_2.png" alt="picture">
-                    <div class="happy_title">
-                      <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <img src="img/why/why_3.png" alt="picture">
-                    <div class="happy_title happy_title--white">
-                      <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <img src="img/why/why_4.png" alt="picture">
-                    <div class="happy_title">
-                      <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
-                    </div>
-                  </div>
-                  <div class="col-6 no-gutters">
-                    <div class="col-12">
-                      <img src="img/why/why_5.png" alt="picture">
-                      <div class="happy_title">
-                        <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <img src="img/why/why_kid.png" alt="picture">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <img src="img/why/why_knopka.png" alt="picture">
-                    <div class="happy_title_main happy_title_button">
-                      <span>Согласны<br> с нами?</span>
-                      <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
-                    </div>
+                  <div class="col-12">
+                    <img src="img/why/why_kid.png" alt="picture">
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="happy_desc">
-          <div class="happy_desc_left_side">
-            <div class="img">
-              <img src="img/why/why_main.png" alt="picture">
-              <div class="happy_title_main">
-                <span>Почему важно<br> радовать детей<br> подарками</span>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="img">
-                <img src="img/why/why_4.png" alt="picture">
-                <div class="happy_title">
-                  <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
-                </div>
-              </div>
-              <div class="img">
-                <img src="img/why/why_5.png" alt="picture">
-                <div class="happy_title">
-                  <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="happy_desc_right_side">
-            <div class="flex">
-              <div class="img">
-                <img src="img/why/why_1.png" alt="picture">
-                <div class="happy_title">
-                  <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
-                </div>
-              </div>
-              <div class="img">
-                <img src="img/why/why_2.png" alt="picture">
-                <div class="happy_title">
-                  <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
-                </div>
-              </div>
-              <div class="img">
-                <img src="img/why/why_3.png" alt="picture">
-                <div class="happy_title happy_title--white">
-                  <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
-                </div>
-              </div>
-            </div>
-            <div class="flex">
-              <div class="img"><img src="img/why/why_kid.png" alt="picture"></div>
-              <div class="img">
-                <img src="img/why/why_knopka.png" alt="picture">
-                <div class="happy_title_main happy_title_button">
-                  <span>Согласны<br> с нами?</span>
-                  <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
+                <div class="col-6">
+                  <img src="img/why/why_knopka.png" alt="picture">
+                  <div class="happy_title_main happy_title_button">
+                    <span>Согласны<br> с нами?</span>
+                    <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="happy_desc">
+        <div class="happy_desc_left_side">
+          <div class="img">
+            <img src="img/why/why_main.png" alt="picture">
+            <div class="happy_title_main">
+              <span>Почему важно<br> радовать детей<br> подарками</span>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="img">
+              <img src="img/why/why_4.png" alt="picture">
+              <div class="happy_title">
+                <div class="happy_title_num">4</div><div>Запоминается <br> как семейные<br> традиции</div>
+              </div>
+            </div>
+            <div class="img">
+              <img src="img/why/why_5.png" alt="picture">
+              <div class="happy_title">
+                <div class="happy_title_num">5</div><div>Незабываемые<br>воспоминания</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="happy_desc_right_side">
+          <div class="flex">
+            <div class="img">
+              <img src="img/why/why_1.png" alt="picture">
+              <div class="happy_title">
+                <div class="happy_title_num">1</div><div>Вызывает <br> радость и улыбку</div>
+              </div>
+            </div>
+            <div class="img">
+              <img src="img/why/why_2.png" alt="picture">
+              <div class="happy_title">
+                <div class="happy_title_num">2</div><div>Говорит <br>о вашей заботе</div>
+              </div>
+            </div>
+            <div class="img">
+              <img src="img/why/why_3.png" alt="picture">
+              <div class="happy_title happy_title--white">
+                <div class="happy_title_num">3</div><div>Яркое событие<br> для ребенка</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="img"><img src="img/why/why_kid.png" alt="picture"></div>
+            <div class="img">
+              <img src="img/why/why_knopka.png" alt="picture">
+              <div class="happy_title_main happy_title_button">
+                <span>Согласны<br> с нами?</span>
+                <a href="#" class="btn_agry">Хочу подарить<img src="img/why/arrow_right.png" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
         <!--::::::::::::: //Happy::::::::::::: !-->
+        <!--::::::::::::: product-slider::::::::::::: !-->
+    <div class="product-slider-wrapper">
+      <h2>Вас может это заинтересовать</h2>
+      <div class="product-slider">
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img"><img src="img/product/img-prod_1.jpg" alt="product"></div>
+            <div class="product-code">
+              <span>Код товара: 546117</span>
+            </div>
+            <div class="product-title">
+              <a href="#">Набор кукол Surprise OMG барби-DJ (560548)</a>
+            </div>
+            <div class="product-rating">
+              <img class="product-stars" src="img/product/stars.png" alt="#">
+              <a href="#" class="product-comments">17 отзывов</a>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="product-price_num">1 500</span><span class="product-price_cur"></span> грн
+              </div>
+              <div class="product-like"><img src="img/product/like.png" alt="like"></div>
+              <input class="product-buy" type="button" value="Купить">
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img"><img src="img/product/img-prod_2.jpg" alt="product"></div>
+            <div class="product-code">
+              <span>Код товара: 546117</span>
+            </div>
+            <div class="product-title">
+              <a href="#">Набор кукол Surprise OMG барби-DJ (560548)</a>
+            </div>
+            <div class="product-rating">
+              <img class="product-stars" src="img/product/stars.png" alt="#">
+              <a href="#" class="product-comments">17 отзывов</a>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="product-price_num">1 500</span><span class="product-price_cur"></span> грн
+              </div>
+              <div class="product-like"><img src="img/product/like.png" alt="like"></div>
+              <input class="product-buy" type="button" value="Купить">
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img"><img src="img/product/img-prod_3.jpg" alt="product"></div>
+            <div class="product-code">
+              <span>Код товара: 546117</span>
+            </div>
+            <div class="product-title">
+              <a href="#">Набор кукол Surprise OMG барби-DJ (560548)</a>
+            </div>
+            <div class="product-rating">
+              <img class="product-stars" src="img/product/stars.png" alt="#">
+              <a href="#" class="product-comments">17 отзывов</a>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="product-price_num">1 500</span><span class="product-price_cur"></span> грн
+              </div>
+              <div class="product-like"><img src="img/product/like.png" alt="like"></div>
+              <input class="product-buy" type="button" value="Купить">
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img"><img src="img/product/img-prod_4.jpg" alt="product"></div>
+            <div class="product-code">
+              <span>Код товара: 546117</span>
+            </div>
+            <div class="product-title">
+              <a href="#">Набор кукол Surprise OMG барби-DJ (560548)</a>
+            </div>
+            <div class="product-rating">
+              <img class="product-stars" src="img/product/stars.png" alt="#">
+              <a href="#" class="product-comments">17 отзывов</a>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="product-price_num">1 500</span><span class="product-price_cur"></span> грн
+              </div>
+              <div class="product-like"><img src="img/product/like.png" alt="like"></div>
+              <input class="product-buy" type="button" value="Купить">
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-item">
+            <div class="product-img"><img src="img/product/img-prod_4.jpg" alt="product"></div>
+            <div class="product-code">
+              <span>Код товара: 546117</span>
+            </div>
+            <div class="product-title">
+              <a href="#">Набор кукол Surprise OMG барби-DJ (560548)</a>
+            </div>
+            <div class="product-rating">
+              <img class="product-stars" src="img/product/stars.png" alt="#">
+              <a href="#" class="product-comments">17 отзывов</a>
+            </div>
+            <div class="product-bottom">
+              <div class="product-price">
+                <span class="product-price_num">1 500</span><span class="product-price_cur"></span> грн
+              </div>
+              <div class="product-like"><img src="img/product/like.png" alt="like"></div>
+              <input class="product-buy" type="button" value="Купить">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--::::::::::::: //product-slider::::::::::::: !-->
+        <!--::::::::::::: Brands::::::::::::: !-->
+    <div class="brands">
+      <h2>Бренды</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/huggies.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/cam.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/britax.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/sodasan.png" alt="brand">
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/attipas.png" alt="brand">
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/kabrita.png" alt="brand">
+
+          </div>
+        </div>
+        <div class="brands-btn">
+          <span>еще бренды</span><img src="img/header/arrow.png" alt="arr">
+        </div>
+        <div id="row-hide" class="row">
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/bubchen.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/moony.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/dove.png" alt="brand">
+            
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/lansinoh.png" alt="brand">
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/nestle.png" alt="brand">
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2">
+            <img src="img/brands/smil.png" alt="brand">
+
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--::::::::::::: //Brands::::::::::::: !-->
+        <!--::::::::::::: Text-block::::::::::::: !-->
+    <div class="text-block">
+      <p>Мы предлагаем не просто играть, а делать это весело, познавательно и увлекательно! 
+        Мы ищем самые интересные игрушки для детей от 0 до 99 лет, потому что уверены, 
+        что играть можно в любом возрасте! Для любителей коллекционировать у нас есть 
+        необыкновенные 4D пазлы от 4D Master, почитателям прелестных ангелочков предлагаем Sonny Angel, 
+        поклонники игр-головоломок могут попробовать себя в сборке пазлов EuroGraphics и мозаики Hama. 
+        А те, кто любит необычные наборы для рисования, пазлы и игрушки - обратите свое внимание на Djeco и Janod. 
+        Для поклонников деревянных эко-игрушек - мы нашли необыкновенные Grimms, Melissa&Doug, GOKI, HAPE, HAME. 
+        Если ваш ребенок любит рисовать, то мы готовы его удивить самыми интересными карандашами, мелками, 
+        наборами для творчества от ALEX Toys, Crayon Rocks, Crazy Crayons. Кто не мыслит свой досуг без сборки 
+        пары-тройки интересных моделей, могут приобрести конструктор Engino. Да, у нас очень много других 
+        любопытных игр, игрушек, развивалок..... :) Присоединяйтесь!! Будет весело!</p>
+      <p>Доставка товаров в следующие города: Киев, Харьков, Одесса, Львов, Днепропетровск, 
+        Николаев, Полтава, Ровно, Сумы, Тернополь, Ивано-Франковск, Кировоград, Херсон, 
+        Хмельницкий, Черкассы, Чернигов, Черновцы, Винница, Луцк, Житомир, Запорожье, Ужгород.</p>
+    </div>
+        <!--::::::::::::: //Text-block::::::::::::: !-->
     
         <!--::::::::::::: Footer::::::::::::: !-->
+      <div class="top-footer">
+        <div class="top-footer-title">
+          <h2>Узнавайте первыми о новинках, акциях</h2>
+        </div>
+        <div class="top-footer-form">
+          <form>
+            <input type="text" name="email" class="form-input" placeholder="Введите Email">
+            <div class="btn_submit" type="submit">
+              <img src="img/Footer/violet_arrow.png" alt="search">
+            </div>
+          </form>
+        </div>
+        <div class="top-footer-pickture">
+          <img src="img/Footer/friends.png" alt="friends">
+        </div>
+      </div>
       <footer>
-        <div class="container">
         
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5th d-n-mob logo-footer"><a href="#"><img src="img/Footer/logo-footer.png" alt="logo"></a></div>
+            <div class="col-12 col-md-5th">
+              <div class="footer-title d-n-desc">
+                <h3>Patisson Toys</h3>
+                <img src="img/header/arrow.png" alt="arr">
+              </div>
+              <div class="footer-nav">
+                <ul>
+                  <li><a href="#">Кто мы?</a></li>
+                  <li><a href="#">Игрушечные новости</a></li>
+                  <li><a href="#">Обзоры экспертов</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Доставка и оплата</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-5th">
+              <div class="footer-title"><h3>Звоните</h3></div>
+              <a href="tel:+380972548334"><strong>(097) 254-83-34</strong></a>
+              <span class="recall">перезвоните мне</span>
+            </div>
+            <div class="col-12 col-md-5th">
+              <div class="footer-title"><h3>Мы работаем</h3></div>
+              <div class="schedule">
+                <span>Пн-Пт </span> <strong>9:00-18:00</strong><br>
+                <span>Сб-Вс </span><strong>Выходные</strong>
+              </div> 
+            </div>
+            <div class="col-12 col-md-5th">
+              <div class="footer-title"><h3>Пишите</h3></div>
+              <a href="mailto:patisson.toys@gmail.com">patisson.toys@gmail.com</a>
+              <div class="footer-sosial">
+                <a href="#"><img src="img/Footer/messenger.png" alt="logo"></a>
+                <a href="#"><img src="img/Footer/viber.png" alt="logo"></a>
+                <a href="#"><img src="img/Footer/telegram.png" alt="logo"></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="footer-picture">
+            <img class="d-n-desc" src="img/Footer/picture_mob.png" alt="picture">
+            <img class="d-n-mob" src="img/Footer/picture_desc.png" alt="picture">
+          </div>
         </div>
       </footer>
+      <div class="bottom-footer">
+        <a href="#">Интернет-магазин детских игрушек. © Patisson-toys 2015-2019</a>
+      </div>
     </div>
     <!-- </div> -->
   
