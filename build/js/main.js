@@ -7,12 +7,15 @@ $(document).ready(function(){
   $('.main-slider').slick({
     prevArrow: "<img src='img/slider/slide-left_arrow.png' class='prev' alt='1'>",
     nextArrow: "<img src='img/slider/slide-right_arrow.png' class='next' alt='2'>",
-    dots: true
+    dots: true,
+    // infinite: false,
+    draggable: true
+    // fade: true
   });
   $('.product-slider').slick({
     prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
     nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
-    
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1200,
@@ -32,13 +35,15 @@ $(document).ready(function(){
           slidesToShow: 1
         }
       }
-    ],
-    slidesToShow: 4
+    ]
+   
   });
   $('.views-slider').slick({
     prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
     nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
     slidesToShow: 3,
+    infinite: true,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -65,6 +70,8 @@ $(document).ready(function(){
     nextArrow: "<img src='img/slider/arr-violet_right.png' class='next' alt='2'>",
     slidesToShow: 1,
     fade: true,
+    infinite: true,
+    draggable: true,
     asNavFor: '.card-slider-bottom',
     focusOnSelect: true,
     initialSlide: 3,
@@ -91,11 +98,12 @@ $(document).ready(function(){
   });
   $('.card-slider-bottom').slick({
     dots: false,
+    infinite: true,
+    draggable: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.card-slider-top',
     focusOnSelect: true
-
   });
 
 
