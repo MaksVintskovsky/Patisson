@@ -1,0 +1,61 @@
+.blog-wrapper
+    // display: none
+    padding: 30px 30px 80px
+    @media(min-width:992px)
+        padding: 20px 50px 80px
+    @media(min-width:1200px)
+        padding: 20px 80px 80px
+    h3 
+        color: #231e1f
+        font-size: 14px
+        margin-bottom: 20px
+        @media(min-width:540px)
+            width: 480px
+            margin: 0 auto 20px
+        @media(min-width:768px)
+            margin: 0 0 20px
+            width: auto
+.blog
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-align: left
+    
+    .row
+        // justify-content: space-between
+        // align-items: flex-start
+.blog-item
+    // width: 100%
+    margin: 0 auto 40px
+    img 
+        width: 100%
+        border-radius: 12px
+    @media(min-width:540px)
+            width: 480px
+    @media(min-width:768px)
+        margin: 0 0 40px
+        width: 49%
+        img 
+            width: 100%
+.blog-item_subtitle
+    color: #b2b2b2
+    margin: 20px 0 5px
+.blog-item_title
+    color: #3c3c3b
+    font-size: 20px
+    @media(min-width:992px)
+        font-size: 24px
+.blog-pagination
+
+.blog-page-num
+    display: inline-block
+    width: 21px
+    height: 21px
+    color: #000000
+    font-size: 12px
+    font-weight: 700
+    background-color: #ededed
+    border-radius: 7px
+    padding-top: 5px
+    &.active
+        background-color: #c6c6c6
