@@ -21,13 +21,33 @@
 .product-img
     // border-bottom: 1px solid #c6c6c6
     margin-bottom: 15px
-    height: 280px
-    @media(min-width:768px)
-        height: 220px
+    max-height: 280px
+    position: relative
     img 
+        display: block
         margin: 0 auto
-        max-height: 100%
+        max-height: 200px
+        max-width: 100%
 
+.btn-label, .btn-hit
+    position: absolute
+    color: #fff
+    border-radius: 10px
+    border: none
+    height: 26px
+    font-size: 12px
+    font-weight: 700
+    padding: 5px
+    text-align: center
+    padding-bottom: 3px
+.btn-label
+    background-color: $red
+    width: 72px
+    top: 5px
+.btn-hit
+    background-color: #f9b233
+    width: 52px
+    top: 35px
 .product-code
     color: #c6c6c6
     font-size: 11px
@@ -54,6 +74,8 @@
     color: #3c3c3b
     font-weight: 700
     margin-top: 20px
+.product-price
+    flex-grow: 2
 .product-price_num
     font-size: 25px
     @media(min-width:768px)
@@ -63,19 +85,21 @@
 
 .product-like
     width: 22px
-    margin-left: 30px
+    margin-right: 10px
     @media(min-width:768px)
         width: auto
 .product-buy
     background-color: $green
     color: #fff
-    border-radius: 10px
+    border-radius: 12px
     border: none
     width: 88px
     height: 35px
     font-size: 19px
     font-weight: 700
     padding-left: 5px
+    padding-bottom: 3px
+
 .product-slider-prev
     left: -20px
     transform: translate(-50%, -50%)
