@@ -45,14 +45,14 @@ $(document).ready(function(){
     nextText: '<img src="img/slider/slide-right_arrow.png">',
     prevText: '<img src="img/slider/slide-left_arrow.png">',
     speed: 300
-  })
+  });
   $('.card-slider-top').bxSlider({
     nextText: '<img src="img/slider/arr-violet_right.png">',
     prevText: '<img src="img/slider/arr-violet_left.png">',
     // pager: false,
     speed: 300,
     pagerCustom: '#bx-pager'
-  })
+  });
   // $('.product-slider').bxSlider({
   //   nextText: '<img src="img/slider/arr-violet_right.png">',
   //   prevText: '<img src="img/slider/arr-violet_left.png">',
@@ -65,7 +65,7 @@ $(document).ready(function(){
   // })
 
   $('.product-slider').owlCarousel({
-    dots: false,
+    // dots: false,
     nav: true,
     loop:true,
     navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>","<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],

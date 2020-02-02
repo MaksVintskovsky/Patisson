@@ -91,7 +91,7 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
     left: -15px;
-    display: none;
+    /* display: none; */
   
   /* background: url('images/controls.png') no-repeat 0 -32px; */
 }
@@ -101,7 +101,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next {
   right: -15px;
-  display: none;
+  /* display: none; */
   /* background: url('images/controls.png') no-repeat -43px -32px; */
 }
 .bx-wrapper .bx-next:hover,
@@ -182,9 +182,9 @@ ul.bxslider {
   padding: 10px;
 }
 
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
   .bx-wrapper .bx-next, .bx-wrapper .bx-prev{
     display: block;
   }
 
-}
+} */
