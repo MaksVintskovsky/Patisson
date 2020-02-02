@@ -1,4 +1,5 @@
 .main-slider-wrapper
+	position: relative
 	margin: 20px
 	padding-bottom: 30px
 	// height: 310px
@@ -6,16 +7,24 @@
 		margin: 30px 50px
 .main-slider
 	
+	// width: 100%
 .main_slide
+	position: relative
 	height: 310px
-	background-image: url('../../img/slider/zelenui_banner.png')
-	background-position: bottom
-	background-repeat: no-repeat
-	border-radius: 30px
+	// background-image: url('../../img/slider/zelenui_banner.png')
+	// background-position: bottom
+	// background-repeat: no-repeat
+	border-radius: 25px
 	text-align: left
-	padding-left: 110px
-	padding-top: 60px
+	// padding-left: 110px
+	// padding-top: 60px
 	outline: none
+	overflow: hidden
+.main_slide-content
+	position: absolute
+	top: 60px
+	left: 110px
+	width: 270px
 	h1
 		line-height: 1.1
 		font-size: 36px
@@ -28,22 +37,22 @@
 				margin-left: 15px
 			&:hover
 				color: $red
-.slick-arrow
-	display: none
-	position: absolute
-	top: 50%
-	cursor: pointer
-	z-index: 1
-	@media(min-width:768px)
-		display: block!important
+// .next, .prev
+// 	// display: none
+// 	position: absolute
+// 	top: 50%
+// 	cursor: pointer
+// 	z-index: 1
+// 	@media(min-width:768px)
+// 		display: block!important
 	
-.prev 
-	left: 0
-	transform: translate(-50%, -50%)
+// .prev 
+// 	left: 0
+// 	transform: translate(-50%, -50%)
 	
-.next 
-	right: 0
-	transform: translate(50%, -50%)
+// .next 
+// 	right: 0
+// 	transform: translate(50%, -50%)
 
 
 

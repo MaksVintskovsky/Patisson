@@ -54,27 +54,42 @@
         img
             margin: 0 auto
             border-radius: 15px
-.card-slider-top
-    width: 450px
-    height: 400px
+            // height: 100%
+.card-slider-top-wrapper
+    position: relative
     border: 1px solid #c6c6c6
     border-radius: 15px
     margin-bottom: 13px
-.card-slider-bottom
     width: 450px
-    .card-slide
-        width: 85px
-        height: 85px
-        border: 1px solid #c6c6c6
-        border-radius: 15px
-        z-index: 1
-        margin-right: 3px
-        &:last-child
-            margin-right: 0px
-        img
-            width: 100%
-            margin: 0 auto
-            z-index: -1
+    height: 400px
+.card-slider-top
+    width: 100%
+    height: 100%
+    
+.card-slider-bottom
+    display: none
+    @media(min-width:992px)
+        display: flex
+        width: 450px
+        .card-slide
+            display: block
+            width: 85px
+            height: 85px
+            border: 1px solid #c6c6c6
+            border-radius: 15px
+            z-index: 1
+            margin-right: 3px
+            overflow: hidden
+            &:last-child
+                margin-right: 0px
+            img
+                width: 100%
+                margin: 0 auto
+                z-index: -1
+    
+#bx-pager a.active img
+    border: 2px solid $red
+    border-radius: 15px
 .card-info
     width: 450px
     margin: 0 auto

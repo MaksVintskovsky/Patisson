@@ -40,116 +40,58 @@ $(document).ready(function(){
 
 
 
-  $('.main-slider').slick({
-    prevArrow: "<img src='img/slider/slide-left_arrow.png' class='prev' alt='1'>",
-    nextArrow: "<img src='img/slider/slide-right_arrow.png' class='next' alt='2'>",
-    dots: true,
-    // infinite: false,
-    draggable: true
-    // fade: true
-  });
-  $('.product-slider').slick({
-    prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
-    nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
-    slidesToShow: 4,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 940,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-   
-  });
-  // $('.views-slider').slick({
-  //   prevArrow: "<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
-  //   nextArrow: "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>",
-  //   slidesToShow: 3,
-  //   infinite: true,
-  //   draggable: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1200,
-  //       settings: {
-  //         slidesToShow: 3
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1130,
-  //       settings: {
-  //         slidesToShow: 2
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1
-  //       }
-  //     }
-  //   ]
-  // });
-  $('.card-slider-top').slick({
-    prevArrow: "<img src='img/slider/arr-violet_left.png' class='prev' alt='1'>",
-    nextArrow: "<img src='img/slider/arr-violet_right.png' class='next' alt='2'>",
-    slidesToShow: 1,
-    fade: true,
-    infinite: true,
-    draggable: true,
-    asNavFor: '.card-slider-bottom',
-    focusOnSelect: true,
-    initialSlide: 3,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          dots: false,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          dots: true,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          dots: true,
-        }
-      }
-    ]
-  });
-  $('.card-slider-bottom').slick({
+
+  $('.main-slider').bxSlider({
+    nextText: '<img src="img/slider/slide-right_arrow.png">',
+    prevText: '<img src="img/slider/slide-left_arrow.png">',
+    speed: 300
+  })
+  $('.card-slider-top').bxSlider({
+    nextText: '<img src="img/slider/arr-violet_right.png">',
+    prevText: '<img src="img/slider/arr-violet_left.png">',
+    // pager: false,
+    speed: 300,
+    pagerCustom: '#bx-pager'
+  })
+  // $('.product-slider').bxSlider({
+  //   nextText: '<img src="img/slider/arr-violet_right.png">',
+  //   prevText: '<img src="img/slider/arr-violet_left.png">',
+  //   slideWidth: 330,
+  //   moveSlides: 1,
+  //   minSlides: 1,
+  //   maxSlides: 4,
+  //   pager: false,
+  //   slideMargin: 0
+  // })
+
+  $('.product-slider').owlCarousel({
     dots: false,
-    infinite: true,
-    draggable: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.card-slider-top',
-    focusOnSelect: true
+    nav: true,
+    loop:true,
+    navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>","<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
+    responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:2
+      },
+      940:{
+          items:3
+      },
+      1200:{
+          items:4
+      }
+    }
   });
-
-
+ 
+      // :::::::::::: Menu :::::::::::::
   $('.mobile-menu_btn').on('click', function(e){
     e.preventDefault();
     menu.show();
     bg.show(100);
     
   });
-
   $('.mob_btn-close').on('click', function(e){
     e.preventDefault();
     menu.hide();
@@ -164,7 +106,6 @@ $(document).ready(function(){
     }
   });
 
-      // :::::::::::: Menu :::::::::::::
   $('.menu-item').on('click', function(e){
     e.preventDefault();
     // Add the correct active class
@@ -203,6 +144,8 @@ $(document).ready(function(){
   $('.popup-close').on('click', function(){
     popup.hide();
     bg.hide(200);
+    menu.hide();
+
   });
 
   $('.main-tel').on('click', function(){

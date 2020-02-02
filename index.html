@@ -1,19 +1,25 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <!-- Required meta tags -->
+      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Bootstrap, CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<link rel="stylesheet" href="build/css/main.css">
-
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/bxSlider/jquery.bxslider.css"/>
 
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.css">
+
+      <!-- Bootstrap, CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="build/css/main.css">
+
+      
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
 
     <title>Patisson</title>
@@ -57,7 +63,7 @@
         <div class="mobile-menu_btn"><a href="#"><img src="img/header/gamb.png"  alt="menu"></a></div>
         <div class="main-search-wrapper">
           <form class='main-search'>
-            <input type="text" placeholder="Искать к примеру, детские игрушки">
+            <input type="text" placeholder="Искать ">
             <div class="btn_submit" type="submit">
               <img src="img/header/search.png" alt="search">
             </div>
@@ -205,63 +211,98 @@
 
         <!--::::::::::::: Basket::::::::::::: !-->
     <div class="basket">
-      <div class="basket-title">
-        <h2>Ваша корзина</h2><div class="basket-clear">Очистить корзину</div>
-      </div>
-      <div class="basket-goods">
-        <div class="basket-item">
-          <div class="basket-item_img">
-            <img src="img/product/img-prod_2.jpg" alt="img">
+      
+      <div class="flex">
+        <div class="basket-goods">
+          <div class="basket-title">
+            <h2>Ваша корзина</h2><div class="basket-clear">Очистить корзину</div>
           </div>
-          <div class="basket-item_descr">
-            <div class="basket-item_title">
-              <a href="#">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</a>
+          <div class="basket-item">
+            <div class="basket-item_img">
+              <img src="img/product/img-prod_2.jpg" alt="img">
             </div>
-            <div class="basket-item_code">Артикул: 560562</div>
-            <div class="basket-item_price">
-              <div class="basket-item_count">
-                <span class="basket-item_count-dell">-</span>
-                <input type="text" class="basket-item_count-value" value="1">
-                <span class="basket-item_count-add">+</span>
+            <div class="basket-item_info flex">
+              <div class="info-left">
+                <div class="basket-item_title">
+                  <a href="#">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</a>
+                </div>
+                <div class="basket-item_code">Артикул: 560562</div>
               </div>
-              <div class="basket-price_num"><span class="basket-price_value">1 500</span>  грн</div>
-            </div>
-          </div>
-          <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
-        </div>
-        <div class="basket-item">
-          <div class="basket-item_img">
-            <img src="img/product/img-prod_2.jpg" alt="img">
-          </div>
-          <div class="basket-item_descr">
-            <div class="basket-item_title">
-              <a href="#">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</a> 
-            </div>
-            <div class="basket-item_code">Артикул: 560562</div>
-            <div class="basket-item_price">
-              <div class="basket-item_count">
-                <span class="basket-item_count-dell">-</span>
-                <input type="text" class="basket-item_count-value" value="1">
-                <span class="basket-item_count-add">+</span>
+              <div class="info-right">
+                <div class="basket-item_price">
+                  <div class="basket-item_count">
+                    <span class="basket-item_count-dell">-</span>
+                    <input type="text" class="basket-item_count-value" value="1">
+                    <span class="basket-item_count-add">+</span>
+                  </div>
+                  <div class="basket-price_num"><span class="basket-price_value">1 500</span>  грн</div>
+                </div>
               </div>
-              <div class="basket-price_num"><span class="basket-price_value">1 500</span>  грн</div>
             </div>
+            <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
           </div>
-          <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
+          <div class="basket-item">
+            <div class="basket-item_img">
+              <img src="img/product/img-prod_2.jpg" alt="img">
+            </div>
+            <div class="basket-item_info flex">
+              <div class="info-left">
+                <div class="basket-item_title">
+                  <a href="#">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</a>
+                </div>
+                <div class="basket-item_code">Артикул: 560562</div>
+              </div>
+              <div class="info-right">
+                <div class="basket-item_price">
+                  <div class="basket-item_count">
+                    <span class="basket-item_count-dell">-</span>
+                    <input type="text" class="basket-item_count-value" value="1">
+                    <span class="basket-item_count-add">+</span>
+                  </div>
+                  <div class="basket-price_num"><span class="basket-price_value">1 500</span>  грн</div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
+          </div>
+          <div class="basket-item">
+            <div class="basket-item_img">
+              <img src="img/product/img-prod_2.jpg" alt="img">
+            </div>
+            <div class="basket-item_info flex">
+              <div class="info-left">
+                <div class="basket-item_title">
+                  <a href="#">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</a>
+                </div>
+                <div class="basket-item_code">Артикул: 560562</div>
+              </div>
+              <div class="info-right">
+                <div class="basket-item_price">
+                  <div class="basket-item_count">
+                    <span class="basket-item_count-dell">-</span>
+                    <input type="text" class="basket-item_count-value" value="1">
+                    <span class="basket-item_count-add">+</span>
+                  </div>
+                  <div class="basket-price_num"><span class="basket-price_value">1 500</span>  грн</div>
+                </div>
+              </div>
+            </div>
+            <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
+          </div>
         </div>
-      </div>
-      <div class="basket-total">
-        <div class="total-goods">
-          <span>3 ТОВАРА НА СУММУ:</span><strong><span class="total-goods-num">658</span> грн</strong>
+        <div class="basket-total">
+          <div class="total-goods">
+            <span>3 ТОВАРА НА СУММУ:</span><strong><span class="total-goods-num">658</span> грн</strong>
+          </div>
+          <div class="total-delivery">
+            <span>ДОСТАВКА:</span> <strong class="total-goods-num">бесплатно</strong>
+          </div>
+          <div class="total">
+            <span>ИТОГО:</span><strong><span class="total-num">658</span> грн</strong>
+          </div>
+          <input id="basket_submit" type="submit" class="form-submit" value="Оформить заказ">
+          <div class="continue"><span>Продолжить выбор</span></div>
         </div>
-        <div class="total-delivery">
-          <span>ДОСТАВКА:</span> <strong class="total-goods-num">бесплатно</strong>
-        </div>
-        <div class="total">
-          <span>ИТОГО:</span><strong><span class="total-num">658</span> грн</strong>
-        </div>
-        <input id="basket_submit" type="submit" class="form-submit" value="Оформить заказ">
-        <div class="continue"><span>Продолжить выбор</span></div>
       </div>
     </div>
         <!--::::::::::::: // Basket::::::::::::: !-->
@@ -277,38 +318,47 @@
           <div class="card-sliders">
             <div class="card-name d-n-desc">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</div>
             <div class="card-code d-n-desc">Артикул: 560562</div>
-            <div class="card-slider-top">
-              <div class="card-slide"><img src="img/product/img-prod_1.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_2.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_3.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_4.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_1.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_2.jpg" alt="img"></div>
-              <div class="card-slide"><img src="img/product/img-prod_3.jpg" alt="img"></div>
-            </div>
-            <div class="card-slider-bottom d-n-mob">
-              <div class="card-slide">
-                <img src="img/product/img-prod_1.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_2.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_3.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_4.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_1.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_2.jpg" alt="img">
-              </div>
-              <div class="card-slide">
-                <img src="img/product/img-prod_3.jpg" alt="img">
+            <div class="card-slider-top-wrapper">
+              <div class="card-slider-top">
+                <div class="card-slide"><img src="img/product/img-prod_1.jpg" alt="img"></div>
+                <div class="card-slide"><img src="img/product/img-prod_2.jpg" alt="img"></div>
+                <div class="card-slide"><img src="img/product/img-prod_3.jpg" alt="img"></div>
+                <div class="card-slide"><img src="img/product/img-prod_4.jpg" alt="img"></div>
+                <!-- <div class="card-slide"><img src="img/product/img-prod_1.jpg" alt="img"></div> -->
+                <div class="card-slide"><img src="img/product/img-prod_2.jpg" alt="img"></div>
+                <!-- <div class="card-slide"><img src="img/product/img-prod_3.jpg" alt="img"></div> -->
               </div>
             </div>
+              <div id="bx-pager" class="card-slider-bottom ">
+                <a data-slide-index="0" class="card-slide" href=""><img src="img/product/img-prod_1.jpg" /></a>
+                <a data-slide-index="1" class="card-slide" href=""><img src="img/product/img-prod_2.jpg" /></a>
+                <a data-slide-index="2" class="card-slide" href=""><img src="img/product/img-prod_3.jpg" /></a>
+                <a data-slide-index="3" class="card-slide" href=""><img src="img/product/img-prod_4.jpg" /></a>
+                <a data-slide-index="4" class="card-slide" href=""><img src="img/product/img-prod_2.jpg" /></a>
+                <!-- <div class="card-slide">
+                  <img src="img/product/img-prod_1.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_2.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_3.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_4.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_1.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_2.jpg" alt="img">
+                </div>
+                <div class="card-slide">
+                  <img src="img/product/img-prod_3.jpg" alt="img">
+                </div> -->
+              </div>
+            <!-- </div> -->
+
           </div>
           <div class="card-info">
             <div class="card-name d-n-mob">Блейд-волчок Auldey Inﬁnity Nado Электроник Boxing Bear (YW624406)</div>
@@ -363,7 +413,7 @@
       </div>
       <div class="product-slider-wrapper">
         <h2>С этим товаром покупают</h2>
-        <div class="product-slider">
+        <div class="product-slider owl-carousel">
           <div class="product">
             <div class="product-item">
               <div class="product-img"><img src="img/product/img-prod_1.jpg" alt="product"></div>
@@ -977,18 +1027,29 @@
       <div class="main-slider-wrapper">
         <div class="main-slider">
           <div class="main_slide">
-            <h1 class="slide_title">Супер цена на<br> куклы</h1>  
-            <div class="read_more-link"><a href="#"><span>Подробнее</span><img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            <img class="main-slider-bg" src="img/slider/fiolet_banner.png" alt="img">
+            <div class="main_slide-content">
+              <h1 class="slide_title">Супер цена на<br> куклы</h1>  
+              <div class="read_more-link"><a href="#"><span>Подробнее</span><img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            </div>
           </div>
           <div class="main_slide">
-            <h1 class="slide_title">Супер цена на куклы</h1>
-            <div class="read_more-link"><a href="#">Подробнее<img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            <img class="main-slider-bg" src="img/slider/biryza_banner.png" alt="img">
+            <div class="main_slide-content">
+              <h1 class="slide_title">Супер цена на куклы</h1>
+              <div class="read_more-link"><a href="#">Подробнее<img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            </div>
           </div>
           <div class="main_slide">
-            <h1 class="slide_title">Супер цена на куклы</h1>
-            <div class="read_more-link"><a href="#">Подробнее<img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            <img class="main-slider-bg" src="img/slider/zelenui_banner.png" alt="img">
+            <div class="main_slide-content">
+              <h1 class="slide_title">Супер цена на куклы</h1>
+              <div class="read_more-link"><a href="#">Подробнее<img src="img/slider/red-arrow.png" alt="arrow"></a></div>
+            </div>
           </div>
         </div>
+        <!-- <img id="next" class="next" src="img/slider/slide-right_arrow.png" alt="arr">
+        <img id="prev" class="prev" src="img/slider/slide-left_arrow.png" alt="arr"> -->
       </div>
     </div>
 
@@ -1186,7 +1247,7 @@
         <!--::::::::::::: product-slider::::::::::::: !-->
     <div class="product-slider-wrapper">
       <h2>Вас может это заинтересовать</h2>
-      <div class="product-slider">
+      <div class="product-slider owl-carousel">
         <div class="product">
           <div class="product-item">
             <div class="product-img"><img src="img/product/img-prod_1.jpg" alt="product"></div>
@@ -1458,12 +1519,16 @@
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script> -->
     <script src="libs/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script src='libs/bxSlider/jquery.bxslider.min.js'></script>
+    <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src='libs/slick/slick.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
     crossorigin="anonymous"></script>
 
     <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
-    <script src='libs/slick/slick.min.js'></script>
+
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src='build/js/main.js'></script>
   </body>
