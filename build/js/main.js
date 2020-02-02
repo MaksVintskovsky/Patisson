@@ -65,7 +65,7 @@ $(document).ready(function(){
   // })
 
   $('.owl-carousel').owlCarousel({
-    // dots: false,
+    dots: false,
     nav: true,
     loop:true,
     navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>","<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
