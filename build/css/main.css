@@ -1734,7 +1734,6 @@ nav {
   transition: 0.3s ease-in-out; }
 
 .basket {
-  display: none;
   width: 440px;
   margin: 35px auto;
   color: #333;
