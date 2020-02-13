@@ -106,14 +106,14 @@ $(document).ready(function(){
   $('.mob_btn-close').on('click', function(e){
     e.preventDefault();
     menu.hide();
-    bg.hide(200);
+    bg.hide(100);
   });
   $(document).on('mouseup', function(e){
     if(e.target != menu[0] && menu.has(e.target).length === 0 && e.target != popup && popup.has(e.target).length === 0 && e.target != filter && filter.has(e.target).length === 0) {
       menu.hide();
-      bg.hide(200);
+      bg.hide(100);
       popup.hide(200);
-      filter.hide(200);
+      filter.hide();
     }
   });
 
@@ -155,7 +155,7 @@ $(document).ready(function(){
   
   $('.popup-close').on('click', function(){
     popup.hide();
-    bg.hide(200);
+    bg.hide(100);
     menu.hide();
   });
 
@@ -195,7 +195,7 @@ $(document).ready(function(){
     e.preventDefault();
     menu.hide();
     filter.hide();
-    bg.hide(200);
+    bg.hide(100);
   });
   
 });
