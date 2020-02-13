@@ -46,6 +46,7 @@ $(document).ready(function(){
     prevText: '<img src="img/slider/slide-left_arrow.png">',
     speed: 300
   });
+
   $('.card-slider-top').bxSlider({
     nextText: '<img src="img/slider/arr-violet_right.png">',
     prevText: '<img src="img/slider/arr-violet_left.png">',
@@ -53,18 +54,8 @@ $(document).ready(function(){
     speed: 300,
     pagerCustom: '#bx-pager'
   });
-  // $('.product-slider').bxSlider({
-  //   nextText: '<img src="img/slider/arr-violet_right.png">',
-  //   prevText: '<img src="img/slider/arr-violet_left.png">',
-  //   slideWidth: 330,
-  //   moveSlides: 1,
-  //   minSlides: 1,
-  //   maxSlides: 4,
-  //   pager: false,
-  //   slideMargin: 0
-  // })
-
-  $('.owl-carousel').owlCarousel({
+ 
+  $('.product-slider').owlCarousel({
     dots: false,
     nav: true,
     loop:true,
@@ -84,6 +75,26 @@ $(document).ready(function(){
       }
     }
   });
+
+  $('.views-slider').owlCarousel({
+    dots: false,
+    nav: true,
+    loop:true,
+    navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
+              "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
+    responsive:{
+      0:{
+          items:1
+      },
+      810:{
+          items:2
+      },
+      1200:{
+          items:3
+      }
+    }
+  });
+
  
       // :::::::::::: Menu :::::::::::::
   $('.mobile-menu_btn').on('click', function(e){
@@ -137,16 +148,17 @@ $(document).ready(function(){
     $('.popup_recall').show();
     bg.show();
   });
-  $('.basket_btn').on('click', function(){
-    $('.basket').toggle();
+  $('[value ="Купить"]').on('click', function(){
+    $('.popup_basket').show();
+    bg.show();
   });
   
   $('.popup-close').on('click', function(){
     popup.hide();
     bg.hide(200);
     menu.hide();
-
   });
+
 
   $('.main-tel').on('click', function(){
     $('.main-tel-recall').toggle(300);
@@ -166,6 +178,7 @@ $(document).ready(function(){
     $(".tab-content").hide().eq($(this).index()).fadeIn();
   }).eq(0).addClass("active");
   
+
     // :::::::::::: Filter :::::::::::::
   $('.btn-filtr').on('click', function(e){
     e.preventDefault();
