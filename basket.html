@@ -327,18 +327,46 @@
               </div>
               <div class="basket-item_close"><img src="img/buttons/basket_close.png" alt="close"></div>
             </div>
+            <div class="basket-total">
+              <div class="total-goods">
+                <span>3 ТОВАРА НА СУММУ:</span><strong><span class="total-goods-num">658</span> грн</strong>
+              </div>
+              <div class="total-delivery">
+                <span>ДОСТАВКА:</span> <strong class="total-goods-num">бесплатно</strong>
+              </div>
+              <div class="total">
+                <span>ИТОГО:</span><strong><span class="total-num">658</span> грн</strong>
+              </div>
+              
+            </div>
           </div>
-          <div class="basket-total">
-            <div class="total-goods">
-              <span>3 ТОВАРА НА СУММУ:</span><strong><span class="total-goods-num">658</span> грн</strong>
-            </div>
-            <div class="total-delivery">
-              <span>ДОСТАВКА:</span> <strong class="total-goods-num">бесплатно</strong>
-            </div>
-            <div class="total">
-              <span>ИТОГО:</span><strong><span class="total-num">658</span> грн</strong>
-            </div>
-            <input id="basket_submit" type="submit" class="form-submit basket_submit" value="Оформить заказ">
+          
+          <div class="basket-form">
+            <div class="basket-form-title">Данные для доставки</div>
+            <form>
+              <input type="text" name="name" class="form-input" placeholder="Введите имя*">
+              <input type="text" name="phone" class="form-input" placeholder="+380">
+              <input type="text" name="email" class="form-input" placeholder="Email*">
+              <input type="text" name="phone" class="form-input" placeholder="Адрес доставки">
+              <textarea name="message" cols="30" rows="10" class="form-textarea form-input" placeholder="Комментарий"></textarea>
+              <div class="payment_type">
+                <label class="radio">
+                  <input id="byCash" type="radio" name="payment">
+                  <div class="radio__text">Оплата наличными курьеру (только грн)</div>
+                </label>
+                <!-- <label for="byCash">
+                  <span class="filter-checkmark"></span>
+                </label> <br> -->
+                <!-- <input id="byCard" type="radio" name="payment">
+                <label for="byCard"></label> -->
+                <label class="radio">
+                  <input id="byCard" type="radio" name="payment">
+                  <div class="radio__text">Перевод на карточку ПриватБанка <br> (1% комиссия банка)</div>
+                </label>
+              </div>
+              
+              <input id="basket_submit" type="submit" class="form-submit basket_submit" value="Оформить заказ">
+            </form>
             <div class="continue"><span>Продолжить выбор</span></div>
           </div>
         </div>

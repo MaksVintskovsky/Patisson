@@ -1,3 +1,16 @@
+// ::::::::::::: bg-popup::::::::::::: 
+.bg-popup
+	position: absolute
+	display: none
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background: rgba(151,151,151, .7)
+	z-index: 9
+	@media(min-width:992px)
+		// display: none!important
+
 .popup
 	width: 338px
 	padding-top: 45px
@@ -54,19 +67,6 @@
 	border: none
 	padding: 10px 20px
 	margin: 0 auto
-
-	//::::::::::::: bg-popup::::::::::::: 
-.bg-popup
-	position: absolute
-	display: none
-	top: 0
-	left: 0
-	height: 100%
-	width: 100%
-	background: rgba(151,151,151, .7)
-	z-index: 9
-	@media(min-width:992px)
-		// display: none!important
 
 .popup_discount
 	display: none
@@ -140,7 +140,37 @@
 			cursor: pointer
 			&:focus, &:active, &:hover
 				color: darken($green, 10%)
-
+.popup_registr
+	display: none
+	.form-submit
+		// margin-bottom: 50px
+		background-color: $green
+		text-transform: uppercase
+		&:focus, &:active, &:hover
+			background-color: darken($green, 10%)
+	.popup_title
+		margin-bottom: 20px
+	.popup_bottom
+		font-size: 12px
+		margin: 20px 0 30px
+		display: inline-block
+		color: #333
+	#modalEnter
+		color: #0089d5
+		margin-left: 20px
+		text-decoration: underline
+		text-decoration-style: dotted
+		cursor: pointer
+.popup_psw
+	display: none
+	.form-submit
+		background-color: $green
+		text-transform: uppercase
+		margin-bottom: 40px
+		&:focus, &:active, &:hover
+			background-color: darken($green, 10%)
+	.popup_title
+		margin-bottom: 20px
 .popup_basket
 	display: none
 	padding: 0
@@ -193,7 +223,7 @@
 	font-size: 14px
 	font-weight: 700
 	flex-grow: 1
-	// max-width: 200px
+
 .basket-item_price
 	margin-left: 30px
 .basket-item_count

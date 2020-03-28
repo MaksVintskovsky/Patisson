@@ -55,9 +55,15 @@
     .card-slide
         outline: none
         cursor: pointer
-        // height: 100%
+        // display: table-cell
+        // vertical-align: middle
+        display: flex
+        align-items: center
+        justify-content: center
         img
-            margin: 0 auto
+            // margin: 0 auto
+            display: block
+            // vertical-align: middle
             border-radius: 15px
             // height: 100%
 .card-slider-top-wrapper
@@ -67,8 +73,14 @@
     margin-bottom: 13px
     width: 450px
     height: 400px
+    display: flex
+    align-items: center
+    justify-content: center
+    .bx-wrapper
+        // height: 100%
 .card-slider-top
     width: 100%
+    
     // height: 100%
     
 .card-slider-bottom
@@ -88,11 +100,12 @@
             &:last-child
                 margin-right: 0px
             img
-                width: 100%
+                max-width: 100%
+                height: 100%
                 margin: 0 auto
                 z-index: -1
     
-#bx-pager a.active img
+#bx-pager a.active
     border: 2px solid $red
     border-radius: 15px
 .card-info
@@ -190,7 +203,7 @@
         font-weight: 600
         border-bottom: 1px dotted #333
         @media(min-width:768px)
-            font-weight: 400
+            // font-weight: 400
 .card-tab.active
     span
         border: none
@@ -201,5 +214,7 @@
     background-color: #f7f4ec
     padding: 30px 20px
     @media(min-width:768px)
-        padding: 30px 90px 70px 70px
+        padding: 30px 50px 30px 40px
+    @media(min-width:1100px)
+        padding: 30px 90px 50px 70px
 

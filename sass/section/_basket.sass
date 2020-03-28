@@ -64,7 +64,7 @@
     font-size: 14px
     margin: 15px 0
 .info-right
-    @media(min-width:992px)
+    @media(min-width:1200px)
      margin-left: 30px
 .basket-item_price
     display: flex
@@ -98,19 +98,16 @@
     right: -25px
     transform: translateY(-50%)
 .basket-total
-    background-color: #f0f0f0
-    border-radius: 15px
-    padding: 40px 75px 20px
+    padding: 40px 45px 20px
     margin-top: 30px
     font-size: 14px
     font-weight: 600
     color: #666666
-    max-height: 270px
+    // max-height: 270px
     @media(min-width:992px)
-        margin-top: 50px
-        padding: 40px 30px 20px
-    @media(min-width:1100px)
-        width: 360px 
+        // width: 300px
+        margin: 0 auto
+        padding: 40px 30px 20px 175px
     strong 
         font-weight: 700
         color: #000
@@ -124,15 +121,90 @@
         border-bottom: 1px solid #333333
         margin-bottom: 7px
     .total
-    .basket_submit
-        width: 224px
-        height: 45px
-        background-color: $green
-        font-size: 19px
-        font-weight: 600
-        margin-top: 35px
+#basket_submit
+    height: 45px
+    background-color: $green
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: 600
+    margin-top: 35px
+    @media(min-width:992px)
+        width: 230px
+    @media(min-width:1100px)
+        width: 270px
 .continue
     text-align: center
     margin-top: 5px
+    cursor: pointer
     span
         border-bottom: 1px dotted #333
+
+.basket-form
+    background-color: #f0f0f0
+    border-radius: 15px
+    padding: 40px 50px 20px
+    margin-top: 30px
+    font-size: 14px
+    font-weight: 600
+    color: #666666
+    @media(min-width:992px)
+        max-width: 290px
+        margin-top: 50px
+        margin-right: -10px
+        padding: 40px 30px 20px
+    @media(min-width:1100px)
+        margin-right: 0
+        max-width: 330px
+        // width: 360px
+    .form-input
+        width: 330px
+        @media(min-width:992px)
+            width: 230px
+        @media(min-width:1100px)
+            width: 270px
+     
+.basket-form-title
+    font-size: 22px
+    font-weight: 700
+    margin-bottom: 15px
+.payment_type
+    margin: 10px 0 20px 20px
+
+.radio
+    margin-bottom: 10px
+    input
+        position: absolute
+        z-index: -1
+        opacity: 0
+        margin: 10px 0 0 7px
+
+.radio__text
+	position: relative
+	padding: 0 0 0 35px
+	cursor: pointer
+
+.radio__text:before
+    content: ''
+    position: absolute
+    top: -1px
+    left: 0
+    width: 18px
+    height: 18px
+    border: 1px solid #CDD1DA
+    border-radius: 4px
+    background: #ffffff
+.radio__text:after
+	content: ''
+	position: absolute
+	top: 4px
+	left: 5px
+	width: 8px
+	height: 8px
+	border-radius: 3px
+	background: #b8a4dd
+	opacity: 0
+	transition: .2s
+
+.radio input:checked + .radio__text:after 
+	opacity: 1
+

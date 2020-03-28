@@ -45,6 +45,8 @@
         <a href="#">Оплата и доставка</a>
         <a href="#">Акции</a>
         <a href="blog.html">Блог</a>
+        <a href="page404.html">404</a>
+        <a href="success.html">Success</a>
       </div>
       <div class="pers-cab">
         <img src="img/header/Profile.png" alt="img">Профиль
@@ -60,7 +62,7 @@
     </div>
 
     <header>
-        <div class="logo"><a href="#"><img src="img/header/logo.png" alt="logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="img/header/logo.png" alt="logo"></a></div>
         <div class="mobile-menu_btn"><a href="#"><img src="img/header/gamb.png"  alt="menu"></a></div>
         <div class="main-search-wrapper">
           <form class='main-search'>
@@ -207,7 +209,30 @@
         <input type="submit"class="form-submit" value="ВОЙТИ">
       </form>
       <span id="psw_restore">забыли пароль</span>
-      <div class="registration"><span>регистрация</span></div>
+      <div class="registration"><span id="modalRegistr">регистрация</span></div>
+    </div>
+    <div class="popup_registr popup">
+      <img class="bg_popup-img" src="img/bg/bg_discount.png" alt="bg">
+      <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+      <div class="popup_title">Регистрация</div>
+      <form>
+        <input type="text" name="name" class="form-input" placeholder="ФИО*">
+        <input type="text" name="email" class="form-input" placeholder="E-mail*">
+        <input type="text" name="password" class="form-input" placeholder="Пароль*">
+        <input type="text" name="password" class="form-input" placeholder="Подтвердите пароль*">
+        <input type="text" name="phone" class="form-input" placeholder="Ваш телефон">
+        <input type="submit" class="form-submit" value="зарегистрироваться">
+      </form>
+      <span class="popup_bottom">У меня уже есть аккаунт, </span> <span id="modalEnter">Войти</span>
+    </div>
+    <div class="popup_psw popup">
+      <img class="bg_popup-img" src="img/bg/bg_discount.png" alt="bg">
+      <img class="popup-close" src="img/buttons/popup-close.png" alt="close">
+      <div class="popup_title">Восстановление <br> пароля</div>
+      <form>
+        <input type="text" name="email" class="form-input" placeholder="E-mail">>
+        <input type="submit" class="form-submit" value="отправить пароль">
+      </form>
     </div>
     <div class="popup_basket popup">
       <div class="popup_basket-header">
@@ -247,6 +272,40 @@
       </div>
     </div>
         <!--::::::::::::: // popup::::::::::::: !-->
+        <!--::::::::::::: Success::::::::::::: !-->
+    <!-- <div class="success flex">
+      <div class="success-desc"> Ваша корзина
+        <div class="success-title">Ура! Благодарим вас за заказ!</div>
+        <div class="success-order">Ваш заказ №<span>7374</span>  принят в обработку</div>
+        <p class="success-text">
+          В ближайшее время мы с Вами свяжемся для подтверждения заказа
+          и уточнения времени доставки. При желании, Вы можете уточнить
+          состояние Вашего заказа, позвонив нам по телефону или постучавшись
+          в наши мессенджеры
+        </p>
+        <div class="footer-sosial">
+          <a href="#"><img src="img/Footer/messenger.png" alt="logo"></a>
+          <a href="#"><img src="img/Footer/viber.png" alt="logo"></a>
+          <a href="#"><img src="img/Footer/telegram.png" alt="logo"></a>
+        </div>
+      </div>
+      <div class="success-img"><img src="img/bg/Thanks.jpg" alt="thx"></div>
+
+    </div> -->
+        <!--::::::::::::: // Success::::::::::::: !-->
+
+        <!--::::::::::::: 404::::::::::::: !-->
+    <!-- <div class="page404">
+        <div class="ups">Упс ...</div>
+        <div class="page404-num"><img src="img/bg/404.png" alt="0"></div>
+        <div class="page404-desc">
+          К сожалению, эта страница переехала. 
+          Но вы можете поискать еще много интересного в каталоге!
+        </div>
+        <input type="submit" class="form-submit" value="Найти">
+        <img class="ball404" src="img/bg/ball.png" alt="ball">
+      </div> -->
+        <!--::::::::::::: // 404::::::::::::: !-->
 
         <!--::::::::::::: Basket::::::::::::: !-->
     <!-- <div class="basket">

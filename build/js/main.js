@@ -101,7 +101,6 @@ $(document).ready(function(){
     e.preventDefault();
     menu.show();
     bg.show(100);
-    
   });
   $('.mob_btn-close').on('click', function(e){
     e.preventDefault();
@@ -138,6 +137,21 @@ $(document).ready(function(){
     // :::::::::::: Popup :::::::::::::
   $('.pers-cab').on('click', function(){
     $('.popup_enter').show();
+    bg.show();
+  });
+  $('#modalEnter').on('click', function(){
+    popup.hide();
+    $('.popup_enter').show();
+    bg.show();
+  });
+  $('#modalRegistr').on('click', function(){
+    popup.hide();
+    $('.popup_registr').show();
+    bg.show();
+  });
+  $('#psw_restore').on('click', function(){
+    popup.hide();
+    $('.popup_psw').show();
     bg.show();
   });
   $('.btn_recall').on('click', function(){
@@ -197,5 +211,26 @@ $(document).ready(function(){
     filter.hide();
     bg.hide(100);
   });
-  
+
+    // :::::::::::: Catalog :::::::::::::
+    $('#wiew-line').on('click', function(e){
+      e.preventDefault();
+      $('#catalog-items-listWiew').show();
+      $('.catalog-items').hide();
+    });
+    $('#wiew-table').on('click', function(e){
+      e.preventDefault();
+      $('.catalog-items').show();
+      $('#catalog-items-listWiew').hide();
+    });
+
+    $('.dropdown-toggle').on('click', function(e){
+      e.preventDefault();
+      $('.dropdown-menu').slideToggle(100);
+    });
+    // :::::::::::: Card :::::::::::::
+    $('.open-form').on('click', function(e){
+      $(this).hide();
+      $('.comments form').show(400);
+    });
 });
