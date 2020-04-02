@@ -3952,7 +3952,6 @@ footer {
       height: 790px;
       padding: 80px 160px; } }
   .page404 .ups {
-    background-color: #FDC8CB;
     font-size: 100px;
     font-weight: 400;
     line-height: 1;
@@ -3964,11 +3963,9 @@ footer {
 
 .page404-num {
   font-size: 100px;
-  font-weight: 400;
-  margin-top: -20px; }
+  font-weight: 400; }
 
 .page404-desc {
-  background: #FDC8CB;
   width: 320px;
   margin-top: 40px; }
 

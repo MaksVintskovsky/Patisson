@@ -1,14 +1,3 @@
-// let range = document.querySelectorAll('.ui-state-default')
-// let rangeNum = document.querySelector('.range-num')
-// let rangeVal = document.getElementById('slider-max')
-// for(let i = 0 ; i < range.length ; i++){
-//   range[i].addEventListener('click', function(){
-//     console.log(rangeVal.value);
-//     rangeNum.innerHTML = rangeVal.value;
-//   }) ;
-  
-// };
-
 
 $(document).ready(function(){
 
@@ -16,7 +5,6 @@ $(document).ready(function(){
     bg = $('.bg-popup'),
     popup = $('.popup'),
     filter = $('.filter');
-
 
   $( "#slider-range" ).slider({
     range: true,
@@ -228,6 +216,7 @@ $(document).ready(function(){
       e.preventDefault();
       $('.dropdown-menu').slideToggle(100);
     });
+    
     // :::::::::::: Card :::::::::::::
     $('.open-form').on('click', function(e){
       $(this).hide();
